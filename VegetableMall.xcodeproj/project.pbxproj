@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5DCB00E1304266FA6CAD92 /* Pods_VegetableMall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */; };
+		CE36798F21882E2B009593F1 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798A21882E2B009593F1 /* Cart.storyboard */; };
+		CE36799021882E2B009593F1 /* PickUpGoods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */; };
+		CE36799121882E2B009593F1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798C21882E2B009593F1 /* Home.storyboard */; };
+		CE36799221882E2B009593F1 /* Classify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798D21882E2B009593F1 /* Classify.storyboard */; };
+		CE36799321882E2B009593F1 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798E21882E2B009593F1 /* Mine.storyboard */; };
 		CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B62E92187F7E200DFFB3F /* AppDelegate.m */; };
-		CE9B62ED2187F7E200DFFB3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B62EC2187F7E200DFFB3F /* ViewController.m */; };
 		CE9B62F02187F7E200DFFB3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9B62EE2187F7E200DFFB3F /* Main.storyboard */; };
 		CE9B62F22187F7E200DFFB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9B62F12187F7E200DFFB3F /* Assets.xcassets */; };
 		CE9B62F52187F7E200DFFB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9B62F32187F7E200DFFB3F /* LaunchScreen.storyboard */; };
 		CE9B62F82187F7E200DFFB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B62F72187F7E200DFFB3F /* main.m */; };
 		CE9B63022187F7E200DFFB3F /* VegetableMallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B63012187F7E200DFFB3F /* VegetableMallTests.m */; };
 		CE9B630D2187F7E200DFFB3F /* VegetableMallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B630C2187F7E200DFFB3F /* VegetableMallUITests.m */; };
+		CE9B63332187FA8000DFFB3F /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B63212187FA8000DFFB3F /* BaseModel.m */; };
+		CE9B63362187FC6C00DFFB3F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9B63352187FC6C00DFFB3F /* Default-568h@2x.png */; };
+		CE9B6348218800FF00DFFB3F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B6347218800FF00DFFB3F /* BaseViewController.m */; };
+		CE9B634B2188013100DFFB3F /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B634A2188013100DFFB3F /* CartViewController.m */; };
+		CE9B634E2188013D00DFFB3F /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B634D2188013D00DFFB3F /* ClassifyViewController.m */; };
+		CE9B63512188014500DFFB3F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B63502188014500DFFB3F /* HomeViewController.m */; };
+		CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B63532188014E00DFFB3F /* MineViewController.m */; };
+		CE9B63572188016000DFFB3F /* PickUpGoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B63562188016000DFFB3F /* PickUpGoodsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04CF7981D8A329BC6DDDFE46 /* Pods-VegetableMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegetableMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall.release.xcconfig"; sourceTree = "<group>"; };
+		43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegetableMall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE36798A21882E2B009593F1 /* Cart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickUpGoods.storyboard; sourceTree = "<group>"; };
+		CE36798C21882E2B009593F1 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CE36798D21882E2B009593F1 /* Classify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Classify.storyboard; sourceTree = "<group>"; };
+		CE36798E21882E2B009593F1 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		CE9B62E52187F7E200DFFB3F /* VegetableMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VegetableMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9B62E82187F7E200DFFB3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE9B62E92187F7E200DFFB3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE9B62EB2187F7E200DFFB3F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE9B62EC2187F7E200DFFB3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE9B62EF2187F7E200DFFB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE9B62F12187F7E200DFFB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9B62F42187F7E200DFFB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +69,22 @@
 		CE9B63082187F7E200DFFB3F /* VegetableMallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VegetableMallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9B630C2187F7E200DFFB3F /* VegetableMallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegetableMallUITests.m; sourceTree = "<group>"; };
 		CE9B630E2187F7E200DFFB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9B63212187FA8000DFFB3F /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		CE9B63222187FA8000DFFB3F /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		CE9B63352187FC6C00DFFB3F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE9B6346218800FF00DFFB3F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CE9B6347218800FF00DFFB3F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CE9B63492188013100DFFB3F /* CartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		CE9B634A2188013100DFFB3F /* CartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		CE9B634C2188013D00DFFB3F /* ClassifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
+		CE9B634D2188013D00DFFB3F /* ClassifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		CE9B634F2188014500DFFB3F /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CE9B63502188014500DFFB3F /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CE9B63522188014E00DFFB3F /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		CE9B63532188014E00DFFB3F /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		CE9B63552188016000DFFB3F /* PickUpGoodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickUpGoodsViewController.h; sourceTree = "<group>"; };
+		CE9B63562188016000DFFB3F /* PickUpGoodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickUpGoodsViewController.m; sourceTree = "<group>"; };
+		E2CCBEC49121DB5275399F34 /* Pods-VegetableMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegetableMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5DCB00E1304266FA6CAD92 /* Pods_VegetableMall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +113,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46D750E02243333DE7FF2C49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF375BB52D105C8DE659ADD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2CCBEC49121DB5275399F34 /* Pods-VegetableMall.debug.xcconfig */,
+				04CF7981D8A329BC6DDDFE46 /* Pods-VegetableMall.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE36799621883102009593F1 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		CE9B62DC2187F7E200DFFB3F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +144,8 @@
 				CE9B63002187F7E200DFFB3F /* VegetableMallTests */,
 				CE9B630B2187F7E200DFFB3F /* VegetableMallUITests */,
 				CE9B62E62187F7E200DFFB3F /* Products */,
+				ABF375BB52D105C8DE659ADD /* Pods */,
+				46D750E02243333DE7FF2C49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +164,21 @@
 			children = (
 				CE9B62E82187F7E200DFFB3F /* AppDelegate.h */,
 				CE9B62E92187F7E200DFFB3F /* AppDelegate.m */,
-				CE9B62EB2187F7E200DFFB3F /* ViewController.h */,
-				CE9B62EC2187F7E200DFFB3F /* ViewController.m */,
-				CE9B62EE2187F7E200DFFB3F /* Main.storyboard */,
 				CE9B62F12187F7E200DFFB3F /* Assets.xcassets */,
 				CE9B62F32187F7E200DFFB3F /* LaunchScreen.storyboard */,
 				CE9B62F62187F7E200DFFB3F /* Info.plist */,
 				CE9B62F72187F7E200DFFB3F /* main.m */,
+				CE9B63352187FC6C00DFFB3F /* Default-568h@2x.png */,
+				CE9B63DE218828B000DFFB3F /* Storyboard */,
+				CE9B63202187FA8000DFFB3F /* Base */,
+				CE9B632B2187FA8000DFFB3F /* Cart */,
+				CE9B632F2187FA8000DFFB3F /* Classify */,
+				CE9B631C2187FA8000DFFB3F /* Home */,
+				CE9B63232187FA8000DFFB3F /* Mine */,
+				CE9B63272187FA8000DFFB3F /* PickUpGoods */,
+				CE9B631A2187FA7F00DFFB3F /* Resources */,
+				CE9B631B2187FA8000DFFB3F /* Tools */,
+				CE36799621883102009593F1 /* Global */,
 			);
 			path = VegetableMall;
 			sourceTree = "<group>";
@@ -132,6 +201,209 @@
 			path = VegetableMallUITests;
 			sourceTree = "<group>";
 		};
+		CE9B631A2187FA7F00DFFB3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE9B631B2187FA8000DFFB3F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CE9B631C2187FA8000DFFB3F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B631D2187FA8000DFFB3F /* Controller */,
+				CE9B631E2187FA8000DFFB3F /* Model */,
+				CE9B631F2187FA8000DFFB3F /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE9B631D2187FA8000DFFB3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B634F2188014500DFFB3F /* HomeViewController.h */,
+				CE9B63502188014500DFFB3F /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE9B631E2187FA8000DFFB3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9B631F2187FA8000DFFB3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9B63202187FA8000DFFB3F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B63212187FA8000DFFB3F /* BaseModel.m */,
+				CE9B63222187FA8000DFFB3F /* BaseModel.h */,
+				CE9B6346218800FF00DFFB3F /* BaseViewController.h */,
+				CE9B6347218800FF00DFFB3F /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE9B63232187FA8000DFFB3F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B63242187FA8000DFFB3F /* Controller */,
+				CE9B63252187FA8000DFFB3F /* Model */,
+				CE9B63262187FA8000DFFB3F /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		CE9B63242187FA8000DFFB3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B63522188014E00DFFB3F /* MineViewController.h */,
+				CE9B63532188014E00DFFB3F /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE9B63252187FA8000DFFB3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9B63262187FA8000DFFB3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9B63272187FA8000DFFB3F /* PickUpGoods */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B63282187FA8000DFFB3F /* Controller */,
+				CE9B63292187FA8000DFFB3F /* Model */,
+				CE9B632A2187FA8000DFFB3F /* View */,
+			);
+			path = PickUpGoods;
+			sourceTree = "<group>";
+		};
+		CE9B63282187FA8000DFFB3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B63552188016000DFFB3F /* PickUpGoodsViewController.h */,
+				CE9B63562188016000DFFB3F /* PickUpGoodsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE9B63292187FA8000DFFB3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9B632A2187FA8000DFFB3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9B632B2187FA8000DFFB3F /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B632C2187FA8000DFFB3F /* Controller */,
+				CE9B632D2187FA8000DFFB3F /* Model */,
+				CE9B632E2187FA8000DFFB3F /* View */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		CE9B632C2187FA8000DFFB3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B63492188013100DFFB3F /* CartViewController.h */,
+				CE9B634A2188013100DFFB3F /* CartViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE9B632D2187FA8000DFFB3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9B632E2187FA8000DFFB3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9B632F2187FA8000DFFB3F /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B63302187FA8000DFFB3F /* Controller */,
+				CE9B63312187FA8000DFFB3F /* Model */,
+				CE9B63322187FA8000DFFB3F /* View */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		CE9B63302187FA8000DFFB3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B634C2188013D00DFFB3F /* ClassifyViewController.h */,
+				CE9B634D2188013D00DFFB3F /* ClassifyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE9B63312187FA8000DFFB3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9B63322187FA8000DFFB3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9B63DE218828B000DFFB3F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B62EE2187F7E200DFFB3F /* Main.storyboard */,
+				CE36798E21882E2B009593F1 /* Mine.storyboard */,
+				CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */,
+				CE36798A21882E2B009593F1 /* Cart.storyboard */,
+				CE36798D21882E2B009593F1 /* Classify.storyboard */,
+				CE36798C21882E2B009593F1 /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +411,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9B63112187F7E200DFFB3F /* Build configuration list for PBXNativeTarget "VegetableMall" */;
 			buildPhases = (
+				B61320DE2F99CE8A2612BB70 /* [CP] Check Pods Manifest.lock */,
 				CE9B62E12187F7E200DFFB3F /* Sources */,
 				CE9B62E22187F7E200DFFB3F /* Frameworks */,
 				CE9B62E32187F7E200DFFB3F /* Resources */,
+				77276E0407D4FB50DB20CDB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,8 +509,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE36799221882E2B009593F1 /* Classify.storyboard in Resources */,
+				CE36799121882E2B009593F1 /* Home.storyboard in Resources */,
 				CE9B62F52187F7E200DFFB3F /* LaunchScreen.storyboard in Resources */,
+				CE36799321882E2B009593F1 /* Mine.storyboard in Resources */,
+				CE9B63362187FC6C00DFFB3F /* Default-568h@2x.png in Resources */,
 				CE9B62F22187F7E200DFFB3F /* Assets.xcassets in Resources */,
+				CE36799021882E2B009593F1 /* PickUpGoods.storyboard in Resources */,
+				CE36798F21882E2B009593F1 /* Cart.storyboard in Resources */,
 				CE9B62F02187F7E200DFFB3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,14 +537,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77276E0407D4FB50DB20CDB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B61320DE2F99CE8A2612BB70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VegetableMall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE9B62E12187F7E200DFFB3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9B62ED2187F7E200DFFB3F /* ViewController.m in Sources */,
+				CE9B63572188016000DFFB3F /* PickUpGoodsViewController.m in Sources */,
+				CE9B634E2188013D00DFFB3F /* ClassifyViewController.m in Sources */,
+				CE9B63332187FA8000DFFB3F /* BaseModel.m in Sources */,
+				CE9B634B2188013100DFFB3F /* CartViewController.m in Sources */,
+				CE9B6348218800FF00DFFB3F /* BaseViewController.m in Sources */,
 				CE9B62F82187F7E200DFFB3F /* main.m in Sources */,
+				CE9B63512188014500DFFB3F /* HomeViewController.m in Sources */,
 				CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */,
+				CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +768,7 @@
 		};
 		CE9B63122187F7E200DFFB3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2CCBEC49121DB5275399F34 /* Pods-VegetableMall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +786,7 @@
 		};
 		CE9B63132187F7E200DFFB3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04CF7981D8A329BC6DDDFE46 /* Pods-VegetableMall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
