@@ -10,5 +10,12 @@ target ‘VegetableMall’ do
   pod 'MJRefresh'
   pod 'SDWebImage'
   pod 'TZImagePickerController'
+  pod 'IQKeyboardManager'
+  pod 'MJExtension'
+  pod 'DZNEmptyDataSet'
+  pod 'SVProgressHUD'
+  pod 'Bugly'
+  pod 'BRPickerView'
+  pod 'FMDB'
 end
 
