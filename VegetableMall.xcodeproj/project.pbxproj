@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B62E92187F7E200DFFB3F /* AppDelegate.m */; };
+		CE9B62ED2187F7E200DFFB3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B62EC2187F7E200DFFB3F /* ViewController.m */; };
+		CE9B62F02187F7E200DFFB3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9B62EE2187F7E200DFFB3F /* Main.storyboard */; };
+		CE9B62F22187F7E200DFFB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9B62F12187F7E200DFFB3F /* Assets.xcassets */; };
+		CE9B62F52187F7E200DFFB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9B62F32187F7E200DFFB3F /* LaunchScreen.storyboard */; };
+		CE9B62F82187F7E200DFFB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B62F72187F7E200DFFB3F /* main.m */; };
+		CE9B63022187F7E200DFFB3F /* VegetableMallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B63012187F7E200DFFB3F /* VegetableMallTests.m */; };
+		CE9B630D2187F7E200DFFB3F /* VegetableMallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B630C2187F7E200DFFB3F /* VegetableMallUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE9B62FE2187F7E200DFFB3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9B62DD2187F7E200DFFB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9B62E42187F7E200DFFB3F;
+			remoteInfo = VegetableMall;
+		};
+		CE9B63092187F7E200DFFB3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9B62DD2187F7E200DFFB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9B62E42187F7E200DFFB3F;
+			remoteInfo = VegetableMall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE9B62E52187F7E200DFFB3F /* VegetableMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VegetableMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9B62E82187F7E200DFFB3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE9B62E92187F7E200DFFB3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE9B62EB2187F7E200DFFB3F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE9B62EC2187F7E200DFFB3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE9B62EF2187F7E200DFFB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE9B62F12187F7E200DFFB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9B62F42187F7E200DFFB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE9B62F62187F7E200DFFB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9B62F72187F7E200DFFB3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE9B62FD2187F7E200DFFB3F /* VegetableMallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VegetableMallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9B63012187F7E200DFFB3F /* VegetableMallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegetableMallTests.m; sourceTree = "<group>"; };
+		CE9B63032187F7E200DFFB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9B63082187F7E200DFFB3F /* VegetableMallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VegetableMallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9B630C2187F7E200DFFB3F /* VegetableMallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegetableMallUITests.m; sourceTree = "<group>"; };
+		CE9B630E2187F7E200DFFB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9B62E22187F7E200DFFB3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9B62FA2187F7E200DFFB3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9B63052187F7E200DFFB3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE9B62DC2187F7E200DFFB3F = {
+			isa = PBXGroup;
+			children = (
+				CE9B62E72187F7E200DFFB3F /* VegetableMall */,
+				CE9B63002187F7E200DFFB3F /* VegetableMallTests */,
+				CE9B630B2187F7E200DFFB3F /* VegetableMallUITests */,
+				CE9B62E62187F7E200DFFB3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9B62E62187F7E200DFFB3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B62E52187F7E200DFFB3F /* VegetableMall.app */,
+				CE9B62FD2187F7E200DFFB3F /* VegetableMallTests.xctest */,
+				CE9B63082187F7E200DFFB3F /* VegetableMallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9B62E72187F7E200DFFB3F /* VegetableMall */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B62E82187F7E200DFFB3F /* AppDelegate.h */,
+				CE9B62E92187F7E200DFFB3F /* AppDelegate.m */,
+				CE9B62EB2187F7E200DFFB3F /* ViewController.h */,
+				CE9B62EC2187F7E200DFFB3F /* ViewController.m */,
+				CE9B62EE2187F7E200DFFB3F /* Main.storyboard */,
+				CE9B62F12187F7E200DFFB3F /* Assets.xcassets */,
+				CE9B62F32187F7E200DFFB3F /* LaunchScreen.storyboard */,
+				CE9B62F62187F7E200DFFB3F /* Info.plist */,
+				CE9B62F72187F7E200DFFB3F /* main.m */,
+			);
+			path = VegetableMall;
+			sourceTree = "<group>";
+		};
+		CE9B63002187F7E200DFFB3F /* VegetableMallTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B63012187F7E200DFFB3F /* VegetableMallTests.m */,
+				CE9B63032187F7E200DFFB3F /* Info.plist */,
+			);
+			path = VegetableMallTests;
+			sourceTree = "<group>";
+		};
+		CE9B630B2187F7E200DFFB3F /* VegetableMallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B630C2187F7E200DFFB3F /* VegetableMallUITests.m */,
+				CE9B630E2187F7E200DFFB3F /* Info.plist */,
+			);
+			path = VegetableMallUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9B62E42187F7E200DFFB3F /* VegetableMall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9B63112187F7E200DFFB3F /* Build configuration list for PBXNativeTarget "VegetableMall" */;
+			buildPhases = (
+				CE9B62E12187F7E200DFFB3F /* Sources */,
+				CE9B62E22187F7E200DFFB3F /* Frameworks */,
+				CE9B62E32187F7E200DFFB3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VegetableMall;
+			productName = VegetableMall;
+			productReference = CE9B62E52187F7E200DFFB3F /* VegetableMall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9B62FC2187F7E200DFFB3F /* VegetableMallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9B63142187F7E200DFFB3F /* Build configuration list for PBXNativeTarget "VegetableMallTests" */;
+			buildPhases = (
+				CE9B62F92187F7E200DFFB3F /* Sources */,
+				CE9B62FA2187F7E200DFFB3F /* Frameworks */,
+				CE9B62FB2187F7E200DFFB3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9B62FF2187F7E200DFFB3F /* PBXTargetDependency */,
+			);
+			name = VegetableMallTests;
+			productName = VegetableMallTests;
+			productReference = CE9B62FD2187F7E200DFFB3F /* VegetableMallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE9B63072187F7E200DFFB3F /* VegetableMallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9B63172187F7E200DFFB3F /* Build configuration list for PBXNativeTarget "VegetableMallUITests" */;
+			buildPhases = (
+				CE9B63042187F7E200DFFB3F /* Sources */,
+				CE9B63052187F7E200DFFB3F /* Frameworks */,
+				CE9B63062187F7E200DFFB3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9B630A2187F7E200DFFB3F /* PBXTargetDependency */,
+			);
+			name = VegetableMallUITests;
+			productName = VegetableMallUITests;
+			productReference = CE9B63082187F7E200DFFB3F /* VegetableMallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9B62DD2187F7E200DFFB3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = madingshouyou;
+				TargetAttributes = {
+					CE9B62E42187F7E200DFFB3F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CE9B62FC2187F7E200DFFB3F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE9B62E42187F7E200DFFB3F;
+					};
+					CE9B63072187F7E200DFFB3F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE9B62E42187F7E200DFFB3F;
+					};
+				};
+			};
+			buildConfigurationList = CE9B62E02187F7E200DFFB3F /* Build configuration list for PBXProject "VegetableMall" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9B62DC2187F7E200DFFB3F;
+			productRefGroup = CE9B62E62187F7E200DFFB3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9B62E42187F7E200DFFB3F /* VegetableMall */,
+				CE9B62FC2187F7E200DFFB3F /* VegetableMallTests */,
+				CE9B63072187F7E200DFFB3F /* VegetableMallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9B62E32187F7E200DFFB3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9B62F52187F7E200DFFB3F /* LaunchScreen.storyboard in Resources */,
+				CE9B62F22187F7E200DFFB3F /* Assets.xcassets in Resources */,
+				CE9B62F02187F7E200DFFB3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9B62FB2187F7E200DFFB3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9B63062187F7E200DFFB3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9B62E12187F7E200DFFB3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9B62ED2187F7E200DFFB3F /* ViewController.m in Sources */,
+				CE9B62F82187F7E200DFFB3F /* main.m in Sources */,
+				CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9B62F92187F7E200DFFB3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9B63022187F7E200DFFB3F /* VegetableMallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9B63042187F7E200DFFB3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9B630D2187F7E200DFFB3F /* VegetableMallUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE9B62FF2187F7E200DFFB3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9B62E42187F7E200DFFB3F /* VegetableMall */;
+			targetProxy = CE9B62FE2187F7E200DFFB3F /* PBXContainerItemProxy */;
+		};
+		CE9B630A2187F7E200DFFB3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9B62E42187F7E200DFFB3F /* VegetableMall */;
+			targetProxy = CE9B63092187F7E200DFFB3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE9B62EE2187F7E200DFFB3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9B62EF2187F7E200DFFB3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE9B62F32187F7E200DFFB3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9B62F42187F7E200DFFB3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE9B630F2187F7E200DFFB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE9B63102187F7E200DFFB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9B63122187F7E200DFFB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYV397ERW;
+				INFOPLIST_FILE = VegetableMall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanpu.VegetableMall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9B63132187F7E200DFFB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYV397ERW;
+				INFOPLIST_FILE = VegetableMall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanpu.VegetableMall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE9B63152187F7E200DFFB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYV397ERW;
+				INFOPLIST_FILE = VegetableMallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanpu.VegetableMallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VegetableMall.app/VegetableMall";
+			};
+			name = Debug;
+		};
+		CE9B63162187F7E200DFFB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYV397ERW;
+				INFOPLIST_FILE = VegetableMallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanpu.VegetableMallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VegetableMall.app/VegetableMall";
+			};
+			name = Release;
+		};
+		CE9B63182187F7E200DFFB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYV397ERW;
+				INFOPLIST_FILE = VegetableMallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanpu.VegetableMallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VegetableMall;
+			};
+			name = Debug;
+		};
+		CE9B63192187F7E200DFFB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYV397ERW;
+				INFOPLIST_FILE = VegetableMallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanpu.VegetableMallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VegetableMall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9B62E02187F7E200DFFB3F /* Build configuration list for PBXProject "VegetableMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9B630F2187F7E200DFFB3F /* Debug */,
+				CE9B63102187F7E200DFFB3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9B63112187F7E200DFFB3F /* Build configuration list for PBXNativeTarget "VegetableMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9B63122187F7E200DFFB3F /* Debug */,
+				CE9B63132187F7E200DFFB3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9B63142187F7E200DFFB3F /* Build configuration list for PBXNativeTarget "VegetableMallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9B63152187F7E200DFFB3F /* Debug */,
+				CE9B63162187F7E200DFFB3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9B63172187F7E200DFFB3F /* Build configuration list for PBXNativeTarget "VegetableMallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9B63182187F7E200DFFB3F /* Debug */,
+				CE9B63192187F7E200DFFB3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9B62DD2187F7E200DFFB3F /* Project object */;
+}
