@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0B5DCB00E1304266FA6CAD92 /* Pods_VegetableMall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */; };
+		CE29F0C0218AC4E1000E4F55 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0BF218AC4E1000E4F55 /* Notification.m */; };
+		CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0C4218AE537000E4F55 /* AlertManager.m */; };
+		CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0C7218AE570000E4F55 /* AFNetManager.m */; };
+		CE29F0CE218AF58A000E4F55 /* UIView+CCView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0CD218AF58A000E4F55 /* UIView+CCView.m */; };
 		CE36798F21882E2B009593F1 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798A21882E2B009593F1 /* Cart.storyboard */; };
 		CE36799021882E2B009593F1 /* PickUpGoods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */; };
 		CE36799121882E2B009593F1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798C21882E2B009593F1 /* Home.storyboard */; };
@@ -50,6 +54,18 @@
 /* Begin PBXFileReference section */
 		04CF7981D8A329BC6DDDFE46 /* Pods-VegetableMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegetableMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall.release.xcconfig"; sourceTree = "<group>"; };
 		43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegetableMall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE29F0BA218A9D51000E4F55 /* Url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Url.h; sourceTree = "<group>"; };
+		CE29F0BC218A9ECC000E4F55 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		CE29F0BD218A9ED4000E4F55 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		CE29F0BE218AC4E1000E4F55 /* Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		CE29F0BF218AC4E1000E4F55 /* Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		CE29F0C3218AE537000E4F55 /* AlertManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		CE29F0C4218AE537000E4F55 /* AlertManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
+		CE29F0C6218AE570000E4F55 /* AFNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetManager.h; sourceTree = "<group>"; };
+		CE29F0C7218AE570000E4F55 /* AFNetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetManager.m; sourceTree = "<group>"; };
+		CE29F0C9218AED72000E4F55 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		CE29F0CC218AF58A000E4F55 /* UIView+CCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CCView.h"; sourceTree = "<group>"; };
+		CE29F0CD218AF58A000E4F55 /* UIView+CCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CCView.m"; sourceTree = "<group>"; };
 		CE36798A21882E2B009593F1 /* Cart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickUpGoods.storyboard; sourceTree = "<group>"; };
 		CE36798C21882E2B009593F1 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -130,9 +146,48 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE29F0B8218A9C50000E4F55 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F0BD218A9ED4000E4F55 /* Header.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		CE29F0C1218AE512000E4F55 /* AlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F0C3218AE537000E4F55 /* AlertManager.h */,
+				CE29F0C4218AE537000E4F55 /* AlertManager.m */,
+			);
+			path = AlertManager;
+			sourceTree = "<group>";
+		};
+		CE29F0C2218AE512000E4F55 /* AFNetManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F0C6218AE570000E4F55 /* AFNetManager.h */,
+				CE29F0C7218AE570000E4F55 /* AFNetManager.m */,
+			);
+			path = AFNetManager;
+			sourceTree = "<group>";
+		};
+		CE29F0CB218AF4D2000E4F55 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F0CC218AF58A000E4F55 /* UIView+CCView.h */,
+				CE29F0CD218AF58A000E4F55 /* UIView+CCView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		CE36799621883102009593F1 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				CE29F0BA218A9D51000E4F55 /* Url.h */,
+				CE29F0BC218A9ECC000E4F55 /* Macros.h */,
+				CE29F0BE218AC4E1000E4F55 /* Notification.h */,
+				CE29F0BF218AC4E1000E4F55 /* Notification.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -177,8 +232,10 @@
 				CE9B63232187FA8000DFFB3F /* Mine */,
 				CE9B63272187FA8000DFFB3F /* PickUpGoods */,
 				CE9B631A2187FA7F00DFFB3F /* Resources */,
+				CE29F0CB218AF4D2000E4F55 /* Category */,
 				CE9B631B2187FA8000DFFB3F /* Tools */,
 				CE36799621883102009593F1 /* Global */,
+				CE29F0B8218A9C50000E4F55 /* Header */,
 			);
 			path = VegetableMall;
 			sourceTree = "<group>";
@@ -211,6 +268,9 @@
 		CE9B631B2187FA8000DFFB3F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CE29F0C9218AED72000E4F55 /* Tools.h */,
+				CE29F0C2218AE512000E4F55 /* AFNetManager */,
+				CE29F0C1218AE512000E4F55 /* AlertManager */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -605,12 +665,16 @@
 			files = (
 				CE9B63572188016000DFFB3F /* PickUpGoodsViewController.m in Sources */,
 				CE9B634E2188013D00DFFB3F /* ClassifyViewController.m in Sources */,
+				CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */,
+				CE29F0C0218AC4E1000E4F55 /* Notification.m in Sources */,
 				CE9B63332187FA8000DFFB3F /* BaseModel.m in Sources */,
 				CE9B634B2188013100DFFB3F /* CartViewController.m in Sources */,
+				CE29F0CE218AF58A000E4F55 /* UIView+CCView.m in Sources */,
 				CE9B6348218800FF00DFFB3F /* BaseViewController.m in Sources */,
 				CE9B62F82187F7E200DFFB3F /* main.m in Sources */,
 				CE9B63512188014500DFFB3F /* HomeViewController.m in Sources */,
 				CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */,
+				CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */,
 				CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -785,6 +849,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4PYV397ERW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VegetableMall/Header/Header.h";
 				INFOPLIST_FILE = VegetableMall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -803,6 +868,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4PYV397ERW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VegetableMall/Header/Header.h";
 				INFOPLIST_FILE = VegetableMall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

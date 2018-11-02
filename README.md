@@ -16,3 +16,14 @@
      * Bugly
      * BRPickerView
      * FMDB 
+
+* <font color=#FF8C00>data: 2018-11-1</font>
+ * add tools
+      * AFNetManager
+      * AlertManager
+  * add Header file
+      * url
+      * Macros
+      * Notification
+ 
+ 
