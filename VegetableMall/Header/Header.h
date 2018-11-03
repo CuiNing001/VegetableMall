@@ -13,5 +13,6 @@
 #import "Notification.h"
 #import "Macros.h"
 #import "Tools.h"
+#import "Category.h"
 
 #endif /* Header_h */

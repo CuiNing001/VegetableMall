@@ -18,6 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // 取消系统返回按钮的title
+    self.navigationController.navigationBar.topItem.title = @"";
+    // 设置返回按钮颜色
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 /*

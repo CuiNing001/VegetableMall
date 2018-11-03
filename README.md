@@ -16,7 +16,6 @@
      * Bugly
      * BRPickerView
      * FMDB 
-
 * <font color=#FF8C00>data: 2018-11-1</font>
    * add tools
       * AFNetManager
@@ -25,5 +24,14 @@
       * url
       * Macros
       * Notification
- 
+* <font color=#FF8C00>data:2018-11-2</font>
+    * add Category
+       * view+animation
+       * view+frame
+       * color+color
+       * dictionary+toJson
+       * array+toJson
+       * string+jsonStringToDictionary
+       * string+data
+
  

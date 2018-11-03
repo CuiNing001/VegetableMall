@@ -12,6 +12,12 @@
 		CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0C4218AE537000E4F55 /* AlertManager.m */; };
 		CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0C7218AE570000E4F55 /* AFNetManager.m */; };
 		CE29F0CE218AF58A000E4F55 /* UIView+CCView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0CD218AF58A000E4F55 /* UIView+CCView.m */; };
+		CE29F0D1218BE8B0000E4F55 /* UIColor+CCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0D0218BE8B0000E4F55 /* UIColor+CCColor.m */; };
+		CE29F0D8218C01C8000E4F55 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0D7218C01C8000E4F55 /* UIView+Frame.m */; };
+		CE29F0DB218C1959000E4F55 /* NSDictionary+ToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0DA218C1959000E4F55 /* NSDictionary+ToJson.m */; };
+		CE29F0DE218C2042000E4F55 /* NSArray+ToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0DD218C2042000E4F55 /* NSArray+ToJson.m */; };
+		CE29F0E1218C2264000E4F55 /* NSString+ToDic.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0E0218C2264000E4F55 /* NSString+ToDic.m */; };
+		CE29F0E4218C496D000E4F55 /* NSString+DisplayTime.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0E3218C496D000E4F55 /* NSString+DisplayTime.m */; };
 		CE36798F21882E2B009593F1 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798A21882E2B009593F1 /* Cart.storyboard */; };
 		CE36799021882E2B009593F1 /* PickUpGoods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */; };
 		CE36799121882E2B009593F1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798C21882E2B009593F1 /* Home.storyboard */; };
@@ -66,6 +72,19 @@
 		CE29F0C9218AED72000E4F55 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		CE29F0CC218AF58A000E4F55 /* UIView+CCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CCView.h"; sourceTree = "<group>"; };
 		CE29F0CD218AF58A000E4F55 /* UIView+CCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CCView.m"; sourceTree = "<group>"; };
+		CE29F0CF218BE8B0000E4F55 /* UIColor+CCColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CCColor.h"; sourceTree = "<group>"; };
+		CE29F0D0218BE8B0000E4F55 /* UIColor+CCColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CCColor.m"; sourceTree = "<group>"; };
+		CE29F0D2218BFF7D000E4F55 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		CE29F0D6218C01C8000E4F55 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		CE29F0D7218C01C8000E4F55 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		CE29F0D9218C1959000E4F55 /* NSDictionary+ToJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ToJson.h"; sourceTree = "<group>"; };
+		CE29F0DA218C1959000E4F55 /* NSDictionary+ToJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ToJson.m"; sourceTree = "<group>"; };
+		CE29F0DC218C2042000E4F55 /* NSArray+ToJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ToJson.h"; sourceTree = "<group>"; };
+		CE29F0DD218C2042000E4F55 /* NSArray+ToJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ToJson.m"; sourceTree = "<group>"; };
+		CE29F0DF218C2264000E4F55 /* NSString+ToDic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ToDic.h"; sourceTree = "<group>"; };
+		CE29F0E0218C2264000E4F55 /* NSString+ToDic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ToDic.m"; sourceTree = "<group>"; };
+		CE29F0E2218C496D000E4F55 /* NSString+DisplayTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DisplayTime.h"; sourceTree = "<group>"; };
+		CE29F0E3218C496D000E4F55 /* NSString+DisplayTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DisplayTime.m"; sourceTree = "<group>"; };
 		CE36798A21882E2B009593F1 /* Cart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickUpGoods.storyboard; sourceTree = "<group>"; };
 		CE36798C21882E2B009593F1 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -175,8 +194,21 @@
 		CE29F0CB218AF4D2000E4F55 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CE29F0D2218BFF7D000E4F55 /* Category.h */,
 				CE29F0CC218AF58A000E4F55 /* UIView+CCView.h */,
 				CE29F0CD218AF58A000E4F55 /* UIView+CCView.m */,
+				CE29F0D6218C01C8000E4F55 /* UIView+Frame.h */,
+				CE29F0D7218C01C8000E4F55 /* UIView+Frame.m */,
+				CE29F0CF218BE8B0000E4F55 /* UIColor+CCColor.h */,
+				CE29F0D0218BE8B0000E4F55 /* UIColor+CCColor.m */,
+				CE29F0D9218C1959000E4F55 /* NSDictionary+ToJson.h */,
+				CE29F0DA218C1959000E4F55 /* NSDictionary+ToJson.m */,
+				CE29F0DC218C2042000E4F55 /* NSArray+ToJson.h */,
+				CE29F0DD218C2042000E4F55 /* NSArray+ToJson.m */,
+				CE29F0DF218C2264000E4F55 /* NSString+ToDic.h */,
+				CE29F0E0218C2264000E4F55 /* NSString+ToDic.m */,
+				CE29F0E2218C496D000E4F55 /* NSString+DisplayTime.h */,
+				CE29F0E3218C496D000E4F55 /* NSString+DisplayTime.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -666,16 +698,22 @@
 				CE9B63572188016000DFFB3F /* PickUpGoodsViewController.m in Sources */,
 				CE9B634E2188013D00DFFB3F /* ClassifyViewController.m in Sources */,
 				CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */,
+				CE29F0D8218C01C8000E4F55 /* UIView+Frame.m in Sources */,
 				CE29F0C0218AC4E1000E4F55 /* Notification.m in Sources */,
+				CE29F0E1218C2264000E4F55 /* NSString+ToDic.m in Sources */,
 				CE9B63332187FA8000DFFB3F /* BaseModel.m in Sources */,
 				CE9B634B2188013100DFFB3F /* CartViewController.m in Sources */,
+				CE29F0E4218C496D000E4F55 /* NSString+DisplayTime.m in Sources */,
 				CE29F0CE218AF58A000E4F55 /* UIView+CCView.m in Sources */,
+				CE29F0DE218C2042000E4F55 /* NSArray+ToJson.m in Sources */,
 				CE9B6348218800FF00DFFB3F /* BaseViewController.m in Sources */,
 				CE9B62F82187F7E200DFFB3F /* main.m in Sources */,
 				CE9B63512188014500DFFB3F /* HomeViewController.m in Sources */,
 				CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */,
+				CE29F0D1218BE8B0000E4F55 /* UIColor+CCColor.m in Sources */,
 				CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */,
 				CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */,
+				CE29F0DB218C1959000E4F55 /* NSDictionary+ToJson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
