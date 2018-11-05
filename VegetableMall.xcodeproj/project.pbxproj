@@ -18,6 +18,7 @@
 		CE29F0DE218C2042000E4F55 /* NSArray+ToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0DD218C2042000E4F55 /* NSArray+ToJson.m */; };
 		CE29F0E1218C2264000E4F55 /* NSString+ToDic.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0E0218C2264000E4F55 /* NSString+ToDic.m */; };
 		CE29F0E4218C496D000E4F55 /* NSString+DisplayTime.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0E3218C496D000E4F55 /* NSString+DisplayTime.m */; };
+		CE29F0FC218D74BA000E4F55 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0FB218D74BA000E4F55 /* BaseTableView.m */; };
 		CE36798F21882E2B009593F1 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798A21882E2B009593F1 /* Cart.storyboard */; };
 		CE36799021882E2B009593F1 /* PickUpGoods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */; };
 		CE36799121882E2B009593F1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36798C21882E2B009593F1 /* Home.storyboard */; };
@@ -85,6 +86,8 @@
 		CE29F0E0218C2264000E4F55 /* NSString+ToDic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ToDic.m"; sourceTree = "<group>"; };
 		CE29F0E2218C496D000E4F55 /* NSString+DisplayTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DisplayTime.h"; sourceTree = "<group>"; };
 		CE29F0E3218C496D000E4F55 /* NSString+DisplayTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DisplayTime.m"; sourceTree = "<group>"; };
+		CE29F0FA218D74BA000E4F55 /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		CE29F0FB218D74BA000E4F55 /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		CE36798A21882E2B009593F1 /* Cart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		CE36798B21882E2B009593F1 /* PickUpGoods.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickUpGoods.storyboard; sourceTree = "<group>"; };
 		CE36798C21882E2B009593F1 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -343,10 +346,12 @@
 		CE9B63202187FA8000DFFB3F /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				CE9B63212187FA8000DFFB3F /* BaseModel.m */,
 				CE9B63222187FA8000DFFB3F /* BaseModel.h */,
+				CE9B63212187FA8000DFFB3F /* BaseModel.m */,
 				CE9B6346218800FF00DFFB3F /* BaseViewController.h */,
 				CE9B6347218800FF00DFFB3F /* BaseViewController.m */,
+				CE29F0FA218D74BA000E4F55 /* BaseTableView.h */,
+				CE29F0FB218D74BA000E4F55 /* BaseTableView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -703,6 +708,7 @@
 				CE29F0E1218C2264000E4F55 /* NSString+ToDic.m in Sources */,
 				CE9B63332187FA8000DFFB3F /* BaseModel.m in Sources */,
 				CE9B634B2188013100DFFB3F /* CartViewController.m in Sources */,
+				CE29F0FC218D74BA000E4F55 /* BaseTableView.m in Sources */,
 				CE29F0E4218C496D000E4F55 /* NSString+DisplayTime.m in Sources */,
 				CE29F0CE218AF58A000E4F55 /* UIView+CCView.m in Sources */,
 				CE29F0DE218C2042000E4F55 /* NSArray+ToJson.m in Sources */,
