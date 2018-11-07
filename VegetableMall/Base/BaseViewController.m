@@ -22,6 +22,9 @@
     self.navigationController.navigationBar.topItem.title = @"";
     // 设置返回按钮颜色
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    // 设置背景图片
+    self.view.backgroundColor = [UIColor colorWithImageName:@"bgImage"];
+    
 }
 
 /*

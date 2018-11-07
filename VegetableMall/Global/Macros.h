@@ -10,9 +10,9 @@
 #define Macros_h
 
 //iphoneX
-#define SafeAreaBottomHeight (kVBSCREEN_HEIGHT == 812.0 ? 34 : 0)
-#define SafeAreaTopHeight (kVBSCREEN_HEIGHT == 812.0 ? 88 : 64)
-#define IS_IPHONE_X (kVBSCREEN_HEIGHT == 812.0) ? YES : NO
+#define SafeAreaBottomHeight (SCREEN_HEIGHT == 812.0 ? 34 : 0)
+#define SafeAreaTopHeight (SCREEN_HEIGHT == 812.0 ? 88 : 64)
+#define IS_IPHONE_X (SCREEN_HEIGHT == 812.0) ? YES : NO
 #define Height_NavContentBar 44.0
 #define Height_StatusBar (IS_IPHONE_X==YES)?44.0: 20.0
 #define Height_NavBar (IS_IPHONE_X==YES)?88.0: 64.0

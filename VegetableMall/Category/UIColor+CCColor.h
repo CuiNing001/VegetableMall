@@ -32,6 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIColor*) colorRGBonvertToHSB:(UIColor*)color withAlphaDelta:(CGFloat)delta;
 
+/*
+ * 设置图片背景
+ */
++ (UIColor *)colorWithImageName:(NSString *)imageName;
+
 @end
 
 NS_ASSUME_NONNULL_END

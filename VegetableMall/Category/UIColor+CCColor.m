@@ -52,7 +52,7 @@
 
 
 #pragma mark - 调节颜色亮度
-+ (UIColor*) colorRGBonvertToHSB:(UIColor*)color withBrighnessDelta:(CGFloat)delta {
++ (UIColor *) colorRGBonvertToHSB:(UIColor*)color withBrighnessDelta:(CGFloat)delta {
     CGFloat hue = 0.0f;
     CGFloat saturation = 0.0f;
     CGFloat brightness = 0.0f;
@@ -66,7 +66,7 @@
 }
 
 #pragma mark - 调节颜色透明度
-+ (UIColor*) colorRGBonvertToHSB:(UIColor*)color withAlphaDelta:(CGFloat)delta {
++ (UIColor *) colorRGBonvertToHSB:(UIColor*)color withAlphaDelta:(CGFloat)delta {
     CGFloat hue = 0.0f;
     CGFloat saturation = 0.0f;
     CGFloat brightness = 0.0f;
@@ -78,5 +78,14 @@
     
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:alpha];
 }
+
+#pragma mark - 设置背景图片
++ (UIColor *)colorWithImageName:(NSString *)imageName
+{
+    UIColor *backgroundImageColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageName]];
+    
+    return backgroundImageColor;
+}
+
 @end
 
