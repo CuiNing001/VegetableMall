@@ -42,7 +42,7 @@
                 <navigationController id="DEt-vP-Ilv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="tab_bar_home" selectedImage="tab_bar_home_select" id="JC1-Sz-ixp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="K8s-NF-dtf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="K8s-NF-dtf">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.26274509800000001" green="0.78039215689999997" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,7 +64,7 @@
                 <navigationController id="pNu-xs-KI5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="分类" image="tab_bar_classify" selectedImage="tab_bar_classify_select" id="fId-VT-VmB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="DyL-a5-rXP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="DyL-a5-rXP">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.26274509800000001" green="0.78039215689999997" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -83,7 +83,7 @@
                 <navigationController id="Pb0-ns-kct" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="提货" image="tab_bar_pick" selectedImage="tab_bar_pick_select" id="XJk-ia-lc6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="F52-kM-4ol">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="F52-kM-4ol">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.26274509800000001" green="0.78039215689999997" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,7 +102,7 @@
                 <navigationController id="Anw-6P-G5Z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="购物车" image="tab_bar_cart" selectedImage="tab_bar_cart_select" id="qmu-ol-ZSZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="hK6-5s-jfm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="hK6-5s-jfm">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.26274509800000001" green="0.78039215689999997" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -120,9 +120,8 @@
             <objects>
                 <navigationController id="XZH-kC-Iey" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="tab_bar_mine" selectedImage="tab_bar_mine_select" id="ENM-xq-Yc1"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="dMP-Sc-9Ha">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="dMP-Sc-9Ha">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.26274509800000001" green="0.78039215689999997" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

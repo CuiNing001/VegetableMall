@@ -20,7 +20,6 @@
                         <viewLayoutGuide key="safeArea" id="Q57-xB-Yf8"/>
                     </view>
                     <navigationItem key="navigationItem" title="我的" id="lgH-mF-Lhc"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5j-zp-oOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

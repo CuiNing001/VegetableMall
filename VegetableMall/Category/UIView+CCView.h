@@ -28,6 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)borderWithColor:(NSString *)color width:(CGFloat )width;
 
 /*
+ * 添加阴影
+ */
+- (void)shadowWithColor:(UIColor *)color;
+
+/*
  * 左右抖动动画
  */
 - (void) shakeAnimation;

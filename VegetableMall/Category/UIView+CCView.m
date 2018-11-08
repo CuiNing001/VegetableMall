@@ -35,6 +35,15 @@
     self.layer.borderWidth = width;
 }
 
+#pragma mark - 添加阴影
+- (void)shadowWithColor:(UIColor *)color
+{
+    self.layer.shadowColor = color.CGColor;
+    self.layer.shadowOffset = CGSizeMake(2, 0);
+    self.layer.shadowOpacity = 0.3;
+    self.layer.shadowRadius = 4;
+}
+
 #pragma mark - 抖动动画
 - (void) shakeAnimation
 {

@@ -20,7 +20,6 @@
                         <viewLayoutGuide key="safeArea" id="L90-s7-oOM"/>
                     </view>
                     <navigationItem key="navigationItem" title="提货" id="dCt-E2-FaX"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Iq-D2-C6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeNavLeftItemView">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_location" translatesAutoresizingMaskIntoConstraints="NO" id="OGk-iq-y09">
+                    <rect key="frame" x="20" y="80" width="12" height="15"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获取我的地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkw-lC-h8n">
+                    <rect key="frame" x="42" y="79" width="86" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_triangle" translatesAutoresizingMaskIntoConstraints="NO" id="2Re-NR-V6J">
+                    <rect key="frame" x="138" y="84.5" width="12" height="6"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AS-rN-9fS">
+                    <rect key="frame" x="20" y="30" width="179" height="65"/>
+                    <connections>
+                        <action selector="myLocationAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1Ds-UQ-Srh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGX-uY-FHD">
+                    <rect key="frame" x="320" y="76.5" width="18" height="22"/>
+                    <state key="normal" image="nav_msg"/>
+                    <connections>
+                        <action selector="myMessageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Acp-9m-1dJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.26274509800000001" green="0.78039215689999997" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Re-NR-V6J" firstAttribute="centerY" secondItem="vkw-lC-h8n" secondAttribute="centerY" id="41B-a5-OHq"/>
+                <constraint firstItem="4AS-rN-9fS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="AKf-RI-DGU"/>
+                <constraint firstItem="4AS-rN-9fS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="BCf-Je-sb8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rGX-uY-FHD" secondAttribute="trailing" constant="20" id="Hzr-dH-xrT"/>
+                <constraint firstItem="OGk-iq-y09" firstAttribute="centerY" secondItem="vkw-lC-h8n" secondAttribute="centerY" id="Jeu-s6-ADB"/>
+                <constraint firstItem="rGX-uY-FHD" firstAttribute="centerY" secondItem="vkw-lC-h8n" secondAttribute="centerY" id="KKW-eQ-IgK"/>
+                <constraint firstItem="OGk-iq-y09" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Kcf-Ad-J8A"/>
+                <constraint firstItem="vkw-lC-h8n" firstAttribute="leading" secondItem="OGk-iq-y09" secondAttribute="trailing" constant="10" id="LbM-dH-fri"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OGk-iq-y09" secondAttribute="bottom" constant="10" id="MbI-xp-05Z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4AS-rN-9fS" secondAttribute="bottom" constant="10" id="aAJ-w9-CtT"/>
+                <constraint firstItem="2Re-NR-V6J" firstAttribute="leading" secondItem="vkw-lC-h8n" secondAttribute="trailing" constant="10" id="bCI-J7-PhO"/>
+                <constraint firstItem="4AS-rN-9fS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="sQb-Pe-qAN"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="myLoactionLab" destination="vkw-lC-h8n" id="7ku-Ln-k5k"/>
+                <outlet property="myLocationBtn" destination="4AS-rN-9fS" id="mRO-Kv-jCH"/>
+                <outlet property="myMessageBtn" destination="rGX-uY-FHD" id="X2w-0v-Vwr"/>
+            </connections>
+            <point key="canvasLocation" x="116.8" y="-99.400299850074973"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_location" width="12" height="15"/>
+        <image name="nav_msg" width="18" height="18"/>
+        <image name="nav_triangle" width="12" height="6"/>
+    </resources>
+</document>

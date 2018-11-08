@@ -7,28 +7,96 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeNavLeftItemView.h"
 
 
+#define NavBarHeight (IS_IPHONE_X==YES)?148.0: 124.0
 @interface HomeViewController ()
+
 @property (strong, nonatomic) NSString *netTime;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *warpView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *warpViewHeight;
+@property (weak, nonatomic) IBOutlet UIView *bannerView;
+
+
 @end
 
 @implementation HomeViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 - (void)viewWillDisappear:(BOOL)animated
 {
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
- 
+    [self setUpUI];
+}
+
+#pragma mark - init
+- (void)customNavigationBar
+{
+    HomeNavLeftItemView *leftItemView = [[HomeNavLeftItemView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, Height_NavBar)];
+    [self.view addSubview:leftItemView];
+    
+    leftItemView.chooseLocation = ^{
+        
+    };
+    leftItemView.chooseMessage = ^{
+
+    };
+}
+
+- (void)setUpUI
+{
+    [self customNavigationBar];
+    [self.bannerView shadowWithColor:[UIColor blackColor]];
+}
+
+- (IBAction)searchAction:(UIButton *)sender
+{
+    
+}
+
+- (IBAction)chooseClassAction:(UIButton *)sender
+{
+    switch (sender.tag)
+    {
+        case 101:
+            NSLog(@"精选蔬菜");
+            break;
+        case 102:
+            NSLog(@"精选水果");
+            break;
+        case 103:
+            NSLog(@"粮油干货");
+            break;
+        case 104:
+            NSLog(@"肉禽水产");
+            break;
+        case 105:
+            NSLog(@"中式面点");
+            break;
+        case 106:
+            NSLog(@"家居日化");
+            break;
+        case 107:
+            NSLog(@"新品尝鲜");
+            break;
+        case 108:
+            NSLog(@"饮料冲饮");
+            break;
+            
+        default:
+            break;
+    }
 }
 
 

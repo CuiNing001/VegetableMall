@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B5DCB00E1304266FA6CAD92 /* Pods_VegetableMall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */; };
+		CE29618E2193CDD00063CA92 /* HomeNavLeftItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29618D2193CDD00063CA92 /* HomeNavLeftItemView.m */; };
+		CE2961902193CDE80063CA92 /* HomeNavLeftItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29618F2193CDE80063CA92 /* HomeNavLeftItemView.xib */; };
 		CE29F0C0218AC4E1000E4F55 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0BF218AC4E1000E4F55 /* Notification.m */; };
 		CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0C4218AE537000E4F55 /* AlertManager.m */; };
 		CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0C7218AE570000E4F55 /* AFNetManager.m */; };
@@ -60,6 +62,9 @@
 /* Begin PBXFileReference section */
 		04CF7981D8A329BC6DDDFE46 /* Pods-VegetableMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegetableMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall.release.xcconfig"; sourceTree = "<group>"; };
 		43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegetableMall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE29618C2193CDD00063CA92 /* HomeNavLeftItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNavLeftItemView.h; sourceTree = "<group>"; };
+		CE29618D2193CDD00063CA92 /* HomeNavLeftItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNavLeftItemView.m; sourceTree = "<group>"; };
+		CE29618F2193CDE80063CA92 /* HomeNavLeftItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeNavLeftItemView.xib; sourceTree = "<group>"; };
 		CE29F0BA218A9D51000E4F55 /* Url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Url.h; sourceTree = "<group>"; };
 		CE29F0BC218A9ECC000E4F55 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		CE29F0BD218A9ED4000E4F55 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -336,6 +341,9 @@
 		CE9B631F2187FA8000DFFB3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE29618C2193CDD00063CA92 /* HomeNavLeftItemView.h */,
+				CE29618D2193CDD00063CA92 /* HomeNavLeftItemView.m */,
+				CE29618F2193CDE80063CA92 /* HomeNavLeftItemView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -602,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE36799221882E2B009593F1 /* Classify.storyboard in Resources */,
+				CE2961902193CDE80063CA92 /* HomeNavLeftItemView.xib in Resources */,
 				CE36799121882E2B009593F1 /* Home.storyboard in Resources */,
 				CE9B62F52187F7E200DFFB3F /* LaunchScreen.storyboard in Resources */,
 				CE36799321882E2B009593F1 /* Mine.storyboard in Resources */,
@@ -714,6 +723,7 @@
 				CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */,
 				CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */,
 				CE29F0DB218C1959000E4F55 /* NSDictionary+ToJson.m in Sources */,
+				CE29618E2193CDD00063CA92 /* HomeNavLeftItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
