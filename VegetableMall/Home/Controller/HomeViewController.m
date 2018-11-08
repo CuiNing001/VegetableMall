@@ -8,6 +8,8 @@
 
 #import "HomeViewController.h"
 #import "HomeNavLeftItemView.h"
+#import "HomeCollectionViewCell.h"
+#import "HomeCollectionHeaderView.h"
 
 
 #define NavBarHeight (IS_IPHONE_X==YES)?148.0: 124.0
@@ -18,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIView *warpView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *warpViewHeight;
 @property (weak, nonatomic) IBOutlet UIView *bannerView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 
 @end
@@ -41,25 +44,35 @@
 }
 
 #pragma mark - init
+- (void)setUpUI
+{
+    [self customNavigationBar];
+    [self.bannerView shadowWithColor:[UIColor blackColor]];
+    [self setUpCollectionViewUI];
+}
+
 - (void)customNavigationBar
 {
     HomeNavLeftItemView *leftItemView = [[HomeNavLeftItemView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, Height_NavBar)];
     [self.view addSubview:leftItemView];
     
-    leftItemView.chooseLocation = ^{
+    leftItemView.chooseLocationBlock = ^{
         
     };
-    leftItemView.chooseMessage = ^{
+    leftItemView.chooseMessageBlock = ^{
 
     };
 }
 
-- (void)setUpUI
+- (void)setUpCollectionViewUI
 {
-    [self customNavigationBar];
-    [self.bannerView shadowWithColor:[UIColor blackColor]];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"HomeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"tradeCell"];
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    self.collectionView.collectionViewLayout = flowLayout;
+    
 }
 
+#pragma mark - action
 - (IBAction)searchAction:(UIButton *)sender
 {
     

@@ -23,18 +23,18 @@
 
 - (IBAction)myLocationAction:(UIButton *)sender
 {
-    if (self.chooseLocation)
+    if (self.chooseLocationBlock)
     {
-        self.chooseLocation();
+        self.chooseLocationBlock();
     }
 }
 
 
 - (IBAction)myMessageAction:(UIButton *)sender
 {
-    if (self.chooseMessage)
+    if (self.chooseMessageBlock)
     {
-        self.chooseMessage();
+        self.chooseMessageBlock();
     }
 }
 

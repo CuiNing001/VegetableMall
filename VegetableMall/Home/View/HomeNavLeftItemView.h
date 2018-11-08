@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *myLoactionLab;
 @property (weak, nonatomic) IBOutlet UIButton *myLocationBtn;
 @property (weak, nonatomic) IBOutlet UIButton *myMessageBtn;
-@property (copy, nonatomic) void(^chooseLocation)(void);
-@property (copy, nonatomic) void(^chooseMessage)(void);
+@property (copy, nonatomic) void(^chooseLocationBlock)(void);
+@property (copy, nonatomic) void(^chooseMessageBlock)(void);
 
 
 - (instancetype)initWithFrame:(CGRect)frame;

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juQ-Ib-x7B">
+                        <rect key="frame" x="0.0" y="0.0" width="134" height="135"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清扬洗发水1瓶" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jme-ow-lVW">
+                                <rect key="frame" x="10" y="78.5" width="114" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36.00元/瓶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWW-Ly-F4X">
+                                <rect key="frame" x="10" y="108" width="71" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-Rw-rXs">
+                                <rect key="frame" x="91" y="105.5" width="22" height="22"/>
+                                <state key="normal" image="global_add"/>
+                                <connections>
+                                    <action selector="tradeAddAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="mbI-fp-yX2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_class_new" translatesAutoresizingMaskIntoConstraints="NO" id="n4G-bT-3C7">
+                                <rect key="frame" x="42" y="18.5" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jme-ow-lVW" firstAttribute="leading" secondItem="juQ-Ib-x7B" secondAttribute="leading" constant="10" id="2gm-60-Kxc"/>
+                            <constraint firstItem="aWW-Ly-F4X" firstAttribute="leading" secondItem="juQ-Ib-x7B" secondAttribute="leading" constant="10" id="CEo-ea-C1r"/>
+                            <constraint firstItem="n4G-bT-3C7" firstAttribute="centerX" secondItem="juQ-Ib-x7B" secondAttribute="centerX" id="EWB-Dc-qvm"/>
+                            <constraint firstItem="jme-ow-lVW" firstAttribute="top" secondItem="n4G-bT-3C7" secondAttribute="bottom" constant="10" id="Ju0-qW-HoI"/>
+                            <constraint firstAttribute="bottom" secondItem="aWW-Ly-F4X" secondAttribute="bottom" constant="10" id="Sgl-s4-OZw"/>
+                            <constraint firstItem="jsc-Rw-rXs" firstAttribute="leading" secondItem="aWW-Ly-F4X" secondAttribute="trailing" constant="10" id="URp-Qf-xvP"/>
+                            <constraint firstAttribute="trailing" secondItem="jme-ow-lVW" secondAttribute="trailing" constant="10" id="WWJ-ke-QFk"/>
+                            <constraint firstItem="jsc-Rw-rXs" firstAttribute="top" secondItem="jme-ow-lVW" secondAttribute="bottom" constant="10" id="Xhd-HV-yHY"/>
+                            <constraint firstItem="jsc-Rw-rXs" firstAttribute="centerY" secondItem="aWW-Ly-F4X" secondAttribute="centerY" id="m9p-YG-zsf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="juQ-Ib-x7B" secondAttribute="bottom" id="514-FD-JBs"/>
+                <constraint firstItem="juQ-Ib-x7B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C13-xy-3wO"/>
+                <constraint firstAttribute="trailing" secondItem="juQ-Ib-x7B" secondAttribute="trailing" id="Xew-sg-NqO"/>
+                <constraint firstItem="juQ-Ib-x7B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cvx-ZQ-wRS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="134" height="135"/>
+            <connections>
+                <outlet property="tradeAddBtn" destination="jsc-Rw-rXs" id="pxc-f6-c8r"/>
+                <outlet property="tradeImageView" destination="n4G-bT-3C7" id="cAZ-wh-cbM"/>
+                <outlet property="tradePriceLab" destination="aWW-Ly-F4X" id="VHB-bm-n1B"/>
+                <outlet property="tradeTitleLab" destination="jme-ow-lVW" id="gsE-Rm-iAR"/>
+            </connections>
+            <point key="canvasLocation" x="-4.7999999999999998" y="112.89355322338831"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="global_add" width="22" height="22"/>
+        <image name="home_class_new" width="50" height="50"/>
+    </resources>
+</document>

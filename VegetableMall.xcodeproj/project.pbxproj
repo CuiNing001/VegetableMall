@@ -10,6 +10,11 @@
 		0B5DCB00E1304266FA6CAD92 /* Pods_VegetableMall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */; };
 		CE29618E2193CDD00063CA92 /* HomeNavLeftItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29618D2193CDD00063CA92 /* HomeNavLeftItemView.m */; };
 		CE2961902193CDE80063CA92 /* HomeNavLeftItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29618F2193CDE80063CA92 /* HomeNavLeftItemView.xib */; };
+		CE296197219434EC0063CA92 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE296195219434EC0063CA92 /* HomeCollectionViewCell.m */; };
+		CE296198219434EC0063CA92 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE296196219434EC0063CA92 /* HomeCollectionViewCell.xib */; };
+		CE29619C2194350C0063CA92 /* HomeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29619A2194350C0063CA92 /* HomeCollectionHeaderView.m */; };
+		CE29619D2194350C0063CA92 /* HomeCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29619B2194350C0063CA92 /* HomeCollectionHeaderView.xib */; };
+		CE2961A021943B7F0063CA92 /* HomeTradeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29619F21943B7F0063CA92 /* HomeTradeCellModel.m */; };
 		CE29F0C0218AC4E1000E4F55 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0BF218AC4E1000E4F55 /* Notification.m */; };
 		CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0C4218AE537000E4F55 /* AlertManager.m */; };
 		CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29F0C7218AE570000E4F55 /* AFNetManager.m */; };
@@ -65,6 +70,14 @@
 		CE29618C2193CDD00063CA92 /* HomeNavLeftItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNavLeftItemView.h; sourceTree = "<group>"; };
 		CE29618D2193CDD00063CA92 /* HomeNavLeftItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNavLeftItemView.m; sourceTree = "<group>"; };
 		CE29618F2193CDE80063CA92 /* HomeNavLeftItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeNavLeftItemView.xib; sourceTree = "<group>"; };
+		CE296194219434EC0063CA92 /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		CE296195219434EC0063CA92 /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		CE296196219434EC0063CA92 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE2961992194350C0063CA92 /* HomeCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionHeaderView.h; sourceTree = "<group>"; };
+		CE29619A2194350C0063CA92 /* HomeCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionHeaderView.m; sourceTree = "<group>"; };
+		CE29619B2194350C0063CA92 /* HomeCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionHeaderView.xib; sourceTree = "<group>"; };
+		CE29619E21943B7F0063CA92 /* HomeTradeCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTradeCellModel.h; sourceTree = "<group>"; };
+		CE29619F21943B7F0063CA92 /* HomeTradeCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTradeCellModel.m; sourceTree = "<group>"; };
 		CE29F0BA218A9D51000E4F55 /* Url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Url.h; sourceTree = "<group>"; };
 		CE29F0BC218A9ECC000E4F55 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		CE29F0BD218A9ED4000E4F55 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -334,6 +347,8 @@
 		CE9B631E2187FA8000DFFB3F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE29619E21943B7F0063CA92 /* HomeTradeCellModel.h */,
+				CE29619F21943B7F0063CA92 /* HomeTradeCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,6 +359,12 @@
 				CE29618C2193CDD00063CA92 /* HomeNavLeftItemView.h */,
 				CE29618D2193CDD00063CA92 /* HomeNavLeftItemView.m */,
 				CE29618F2193CDE80063CA92 /* HomeNavLeftItemView.xib */,
+				CE296194219434EC0063CA92 /* HomeCollectionViewCell.h */,
+				CE296195219434EC0063CA92 /* HomeCollectionViewCell.m */,
+				CE296196219434EC0063CA92 /* HomeCollectionViewCell.xib */,
+				CE2961992194350C0063CA92 /* HomeCollectionHeaderView.h */,
+				CE29619A2194350C0063CA92 /* HomeCollectionHeaderView.m */,
+				CE29619B2194350C0063CA92 /* HomeCollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -617,7 +638,9 @@
 				CE9B63362187FC6C00DFFB3F /* Default-568h@2x.png in Resources */,
 				CE9B62F22187F7E200DFFB3F /* Assets.xcassets in Resources */,
 				CE36799021882E2B009593F1 /* PickUpGoods.storyboard in Resources */,
+				CE296198219434EC0063CA92 /* HomeCollectionViewCell.xib in Resources */,
 				CE36798F21882E2B009593F1 /* Cart.storyboard in Resources */,
+				CE29619D2194350C0063CA92 /* HomeCollectionHeaderView.xib in Resources */,
 				CE9B62F02187F7E200DFFB3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -704,6 +727,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE29619C2194350C0063CA92 /* HomeCollectionHeaderView.m in Sources */,
 				CE9B63572188016000DFFB3F /* PickUpGoodsViewController.m in Sources */,
 				CE9B634E2188013D00DFFB3F /* ClassifyViewController.m in Sources */,
 				CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */,
@@ -715,7 +739,9 @@
 				CE29F0E4218C496D000E4F55 /* NSString+DisplayTime.m in Sources */,
 				CE29F0CE218AF58A000E4F55 /* UIView+CCView.m in Sources */,
 				CE29F0DE218C2042000E4F55 /* NSArray+ToJson.m in Sources */,
+				CE296197219434EC0063CA92 /* HomeCollectionViewCell.m in Sources */,
 				CE9B6348218800FF00DFFB3F /* BaseViewController.m in Sources */,
+				CE2961A021943B7F0063CA92 /* HomeTradeCellModel.m in Sources */,
 				CE9B62F82187F7E200DFFB3F /* main.m in Sources */,
 				CE9B63512188014500DFFB3F /* HomeViewController.m in Sources */,
 				CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */,
