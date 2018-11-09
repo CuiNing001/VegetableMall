@@ -353,42 +353,26 @@
                                                     <constraint firstAttribute="trailing" secondItem="n7x-VV-zSe" secondAttribute="trailing" id="qNi-1c-jUm"/>
                                                 </constraints>
                                             </view>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KQu-hK-Lse">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HTN-37-q3C">
                                                 <rect key="frame" x="0.0" y="474" width="414" height="526"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eYd-DT-kTr">
-                                                    <size key="itemSize" width="50" height="50"/>
-                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                </collectionViewFlowLayout>
-                                                <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2e5-jJ-36r">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </view>
-                                                    </collectionViewCell>
-                                                </cells>
-                                            </collectionView>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="KQu-hK-Lse" secondAttribute="trailing" id="1GG-BZ-TJX"/>
-                                            <constraint firstItem="KQu-hK-Lse" firstAttribute="top" secondItem="kCZ-gg-TdT" secondAttribute="bottom" id="E87-d2-Nfs"/>
+                                            <constraint firstItem="HTN-37-q3C" firstAttribute="leading" secondItem="L1s-6h-gkg" secondAttribute="leading" id="1lR-tt-chD"/>
+                                            <constraint firstItem="HTN-37-q3C" firstAttribute="top" secondItem="kCZ-gg-TdT" secondAttribute="bottom" id="B4F-xk-Gcu"/>
                                             <constraint firstAttribute="trailing" secondItem="7Sv-Fr-vhS" secondAttribute="trailing" constant="10" id="ELm-tS-1Aq"/>
-                                            <constraint firstAttribute="bottom" secondItem="KQu-hK-Lse" secondAttribute="bottom" id="F7X-EZ-DIF"/>
-                                            <constraint firstItem="KQu-hK-Lse" firstAttribute="leading" secondItem="L1s-6h-gkg" secondAttribute="leading" id="HwS-kw-LJo"/>
                                             <constraint firstAttribute="height" constant="1000" id="KUA-Ul-tyd"/>
                                             <constraint firstItem="7Sv-Fr-vhS" firstAttribute="top" secondItem="BMG-Vo-qWU" secondAttribute="bottom" constant="10" id="Kd2-4S-zoc"/>
                                             <constraint firstItem="kCZ-gg-TdT" firstAttribute="top" secondItem="7Sv-Fr-vhS" secondAttribute="bottom" constant="10" id="LEg-qJ-bag"/>
                                             <constraint firstItem="BMG-Vo-qWU" firstAttribute="leading" secondItem="L1s-6h-gkg" secondAttribute="leading" id="WNb-rS-yGh"/>
+                                            <constraint firstAttribute="bottom" secondItem="HTN-37-q3C" secondAttribute="bottom" id="ZTb-LT-N5j"/>
                                             <constraint firstAttribute="trailing" secondItem="kCZ-gg-TdT" secondAttribute="trailing" id="bkg-xH-fEl"/>
                                             <constraint firstAttribute="trailing" secondItem="BMG-Vo-qWU" secondAttribute="trailing" id="cbe-8u-x1W"/>
                                             <constraint firstItem="BMG-Vo-qWU" firstAttribute="top" secondItem="L1s-6h-gkg" secondAttribute="top" constant="44" id="dle-th-wYt"/>
                                             <constraint firstItem="7Sv-Fr-vhS" firstAttribute="leading" secondItem="L1s-6h-gkg" secondAttribute="leading" constant="10" id="kb2-ue-A5t"/>
+                                            <constraint firstAttribute="trailing" secondItem="HTN-37-q3C" secondAttribute="trailing" id="odN-EP-JV5"/>
                                             <constraint firstItem="kCZ-gg-TdT" firstAttribute="leading" secondItem="L1s-6h-gkg" secondAttribute="leading" id="shk-vI-gid"/>
                                         </constraints>
                                     </view>
@@ -414,8 +398,8 @@
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="7Sv-Fr-vhS" id="a7G-yI-fKr"/>
-                        <outlet property="collectionView" destination="KQu-hK-Lse" id="WV6-QV-bEZ"/>
                         <outlet property="scrollView" destination="mDc-7v-fzC" id="ggr-gg-cWd"/>
+                        <outlet property="tableView" destination="HTN-37-q3C" id="ctO-ks-Tns"/>
                         <outlet property="warpView" destination="L1s-6h-gkg" id="NAD-2o-41R"/>
                         <outlet property="warpViewHeight" destination="KUA-Ul-tyd" id="9sf-eX-RPy"/>
                     </connections>

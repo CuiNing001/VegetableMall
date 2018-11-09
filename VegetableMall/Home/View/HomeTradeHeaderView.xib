@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeTradeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="139"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-dw-9ZS">
+                    <rect key="frame" x="0.0" y="0.0" width="405" height="139"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul2-dH-viK">
+                            <rect key="frame" x="0.0" y="0.0" width="405" height="139"/>
+                            <state key="normal" backgroundImage="home_header_fruit"/>
+                            <connections>
+                                <action selector="chooseAction:" destination="-2" eventType="touchUpInside" id="L43-19-liO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ul2-dH-viK" firstAttribute="top" secondItem="SSd-dw-9ZS" secondAttribute="top" id="Kn7-nu-LAn"/>
+                        <constraint firstAttribute="trailing" secondItem="Ul2-dH-viK" secondAttribute="trailing" id="QTz-6c-Ll0"/>
+                        <constraint firstItem="Ul2-dH-viK" firstAttribute="leading" secondItem="SSd-dw-9ZS" secondAttribute="leading" id="WCb-pL-daP"/>
+                        <constraint firstAttribute="bottom" secondItem="Ul2-dH-viK" secondAttribute="bottom" id="zvR-CP-l0F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SSd-dw-9ZS" secondAttribute="trailing" id="E7Z-r5-3qM"/>
+                <constraint firstItem="SSd-dw-9ZS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="X3z-KY-XQZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SSd-dw-9ZS" secondAttribute="bottom" id="ohv-Xe-igE"/>
+                <constraint firstItem="SSd-dw-9ZS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tc2-gW-nBV"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="chooseButton" destination="Ul2-dH-viK" id="AhO-cc-fEX"/>
+            </connections>
+            <point key="canvasLocation" x="63.200000000000003" y="-191.1544227886057"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_header_fruit" width="355" height="80"/>
+    </resources>
+</document>

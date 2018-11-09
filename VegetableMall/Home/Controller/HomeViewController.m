@@ -8,19 +8,21 @@
 
 #import "HomeViewController.h"
 #import "HomeNavLeftItemView.h"
-#import "HomeCollectionViewCell.h"
-#import "HomeCollectionHeaderView.h"
+#import "HomeTradeWarpTableViewCell.h"
+#import "HomeTradeHeaderView.h"
 
+@interface HomeViewController ()<
+    UITableViewDelegate,
+    UITableViewDataSource
+>
 
-#define NavBarHeight (IS_IPHONE_X==YES)?148.0: 124.0
-@interface HomeViewController ()
 
 @property (strong, nonatomic) NSString *netTime;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *warpView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *warpViewHeight;
 @property (weak, nonatomic) IBOutlet UIView *bannerView;
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 @end
@@ -43,12 +45,18 @@
     [self setUpUI];
 }
 
+- (void)viewDidLayoutSubviews
+{
+    [self.tableView layoutIfNeeded];
+    self.warpViewHeight.constant = (44+60+160+200+10)+(3*100)+(140*3);
+}
+
 #pragma mark - init
 - (void)setUpUI
 {
     [self customNavigationBar];
     [self.bannerView shadowWithColor:[UIColor blackColor]];
-    [self setUpCollectionViewUI];
+    [self setUpTableViewUI];
 }
 
 - (void)customNavigationBar
@@ -64,12 +72,13 @@
     };
 }
 
-- (void)setUpCollectionViewUI
+- (void)setUpTableViewUI
 {
-    [self.collectionView registerNib:[UINib nibWithNibName:@"HomeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"tradeCell"];
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
-    self.collectionView.collectionViewLayout = flowLayout;
-    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.scrollEnabled = NO;
+    [self.tableView registerNib:[UINib nibWithNibName:@"HomeTradeWarpTableViewCell" bundle:nil] forCellReuseIdentifier:@"tradeWarpCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"HomeTradeHeaderView" bundle:nil] forHeaderFooterViewReuseIdentifier:@"tradeWarpView"];
 }
 
 #pragma mark - action
@@ -112,6 +121,51 @@
     }
 }
 
+#pragma mark - tableview delegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 3;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 140;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 100;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.01;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    HomeTradeHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"tradeWarpView"];
+    if (headerView == nil) {
+        headerView = [[HomeTradeHeaderView alloc] initWithReuseIdentifier:@"tradeWarpView"];
+    }
+    return headerView;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    HomeTradeWarpTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tradeWarpCell" forIndexPath:indexPath];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"table view index section:%ld",indexPath.section);
+}
 
 
 /*
