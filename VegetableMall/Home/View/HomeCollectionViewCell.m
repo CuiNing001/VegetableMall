@@ -17,7 +17,9 @@
 
 - (void)setTradeCellWithModel:(HomeTradeCellModel *)tradeModel
 {
-    
+    [self.tradeImageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",tradeModel.coverPic]]];
+    self.tradeTitleLab.text = tradeModel.name;
+    self.tradePriceLab.text = [NSString stringWithFormat:@"%.2f元/份",tradeModel.packPrice.floatValue];
 }
 
 - (IBAction)tradeAddAction:(UIButton *)sender

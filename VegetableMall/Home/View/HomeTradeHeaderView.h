@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeHeaderModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeTradeHeaderView : UITableViewHeaderFooterView
 
 @property (weak, nonatomic) IBOutlet UIButton *chooseButton;
+@property (copy, nonatomic) void(^headerChooesBtnBlock)(void);
 
+- (void)setButtonImageWithModel:(HomeHeaderModel *)model;
 
 @end
 

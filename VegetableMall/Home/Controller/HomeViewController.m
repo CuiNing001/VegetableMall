@@ -10,20 +10,22 @@
 #import "HomeNavLeftItemView.h"
 #import "HomeTradeWarpTableViewCell.h"
 #import "HomeTradeHeaderView.h"
+#import "HomeIndexDataModel.h"
+#import "HomeHeaderModel.h"
 
 @interface HomeViewController ()<
     UITableViewDelegate,
     UITableViewDataSource
 >
-
-
-@property (strong, nonatomic) NSString *netTime;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *warpView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *warpViewHeight;
 @property (weak, nonatomic) IBOutlet UIView *bannerView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong, nonatomic) NSMutableArray *bannerListArray;         // 轮播图
+@property (strong, nonatomic) NSMutableArray *categoryListArray;       // 分类图标
+@property (strong, nonatomic) NSMutableArray *categoryGoodsListArray;  // 分类商品
 
 @end
 
@@ -43,13 +45,14 @@
     [super viewDidLoad];
     
     [self setUpUI];
+    
+    [self loadData];
 }
 
-- (void)viewDidLayoutSubviews
-{
-    [self.tableView layoutIfNeeded];
-    self.warpViewHeight.constant = (44+60+160+200+10)+(3*100)+(140*3);
-}
+//- (void)viewDidLayoutSubviews
+//{
+//    [self.tableView layoutIfNeeded];
+//}
 
 #pragma mark - init
 - (void)setUpUI
@@ -124,7 +127,7 @@
 #pragma mark - tableview delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return self.categoryGoodsListArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -153,12 +156,25 @@
     if (headerView == nil) {
         headerView = [[HomeTradeHeaderView alloc] initWithReuseIdentifier:@"tradeWarpView"];
     }
+    HomeHeaderModel *headerModel = [[HomeHeaderModel alloc]init];
+    [headerModel setValuesForKeysWithDictionary:self.categoryGoodsListArray[section]];
+    [headerView setButtonImageWithModel:headerModel];
+    headerView.headerChooesBtnBlock = ^{
+        
+    };
     return headerView;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HomeTradeWarpTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tradeWarpCell" forIndexPath:indexPath];
+    if (self.categoryGoodsListArray.count>0)
+    {
+        NSMutableArray *goodsList = [self.categoryGoodsListArray[indexPath.section] objectForKey:@"goodsList"];
+        [cell setValueWithListArray:goodsList];
+        
+        
+    }
     return cell;
 }
 
@@ -167,6 +183,63 @@
     NSLog(@"table view index section:%ld",indexPath.section);
 }
 
+
+#pragma mark - load data
+- (void)loadData
+{
+    [self loadIndexData];
+}
+
+- (void)loadIndexData
+{
+    [[DataSource getDataManager]fetchIndexSuccess:^(id  _Nonnull result)
+    {
+        HomeIndexDataModel *model = [HomeIndexDataModel mj_objectWithKeyValues:result];
+        [self.bannerListArray addObjectsFromArray:model.bannerList];
+        [self.categoryListArray addObjectsFromArray:model.categoryList];
+        [self.categoryGoodsListArray addObjectsFromArray:model.categoryGoodsList];
+        [self upDataTableViewLayout];
+    }
+    faile:^(id  _Nonnull error)
+    {
+        
+    }];
+}
+
+#pragma mark - layout
+- (void)upDataTableViewLayout
+{
+    [self.tableView reloadData];
+    [self.tableView setNeedsLayout];
+    NSInteger sectionCount = self.categoryGoodsListArray.count;
+    self.warpViewHeight.constant = (44+60+160+200+10)+(sectionCount*100)+(140*sectionCount);
+}
+
+#pragma mark - lazy
+- (NSMutableArray *)bannerListArray
+{
+    if (!_bannerListArray)
+    {
+        self.bannerListArray = [NSMutableArray array];
+    }
+    return _bannerListArray;
+}
+- (NSMutableArray *)categoryListArray
+{
+    if (!_categoryListArray)
+    {
+        self.categoryListArray = [NSMutableArray array];
+    }
+    return _categoryListArray;
+}
+-(NSMutableArray *)categoryGoodsListArray
+{
+    if (!_categoryGoodsListArray)
+    {
+        self.categoryGoodsListArray = [NSMutableArray array];
+    }
+    return _categoryGoodsListArray;
+}
 
 /*
 #pragma mark - Navigation

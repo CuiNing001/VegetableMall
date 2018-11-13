@@ -22,7 +22,16 @@
 
 - (IBAction)chooseAction:(UIButton *)sender
 {
-    
+    if (self.headerChooesBtnBlock)
+    {
+        self.headerChooesBtnBlock();
+    }
+}
+
+- (void)setButtonImageWithModel:(HomeHeaderModel *)model
+{
+    NSString *urlStr = [NSString stringWithFormat:@"%@",model.picture];
+    [self.chooseButton sd_setImageWithURL:[NSURL URLWithString:urlStr] forState:UIControlStateNormal];
 }
 
 

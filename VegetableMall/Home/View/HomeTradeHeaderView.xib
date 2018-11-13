@@ -18,9 +18,9 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-dw-9ZS">
                     <rect key="frame" x="0.0" y="0.0" width="405" height="139"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul2-dH-viK">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul2-dH-viK">
                             <rect key="frame" x="0.0" y="0.0" width="405" height="139"/>
-                            <state key="normal" backgroundImage="home_header_fruit"/>
+                            <state key="normal" image="home_header_fruit"/>
                             <connections>
                                 <action selector="chooseAction:" destination="-2" eventType="touchUpInside" id="L43-19-liO"/>
                             </connections>

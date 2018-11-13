@@ -12,9 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeTradeCellModel : BaseModel
 
-@property (strong, nonatomic) NSString *tradeImage;
-@property (strong, nonatomic) NSString *tradeTitle;
-@property (strong, nonatomic) NSString *tradePrice;
+@property (strong, nonatomic) NSString *goodsId;   // 商品id
+@property (strong, nonatomic) NSString *name;      // 商品名称
+@property (strong, nonatomic) NSString *coverPic;  // 商品图片
+@property (strong, nonatomic) NSString *packPrice; // 商品价格
 
 @end
 

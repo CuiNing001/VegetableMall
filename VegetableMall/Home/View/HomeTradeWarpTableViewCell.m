@@ -8,6 +8,7 @@
 
 #import "HomeTradeWarpTableViewCell.h"
 #import "HomeCollectionViewCell.h"
+#import "HomeTradeCellModel.h"
 
 @interface HomeTradeWarpTableViewCell ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -24,6 +25,7 @@
 
 - (void)setUpCollectionViewLayout
 {
+    self.goodsListArray = [NSMutableArray array];
     [self.collectionView registerNib:[UINib nibWithNibName:@"HomeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"tradeCell"];
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
@@ -43,7 +45,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 6;
+    return self.goodsListArray.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -52,6 +54,11 @@
     cell.tradeCellBlock = ^{
         NSLog(@"add index :%ld",indexPath.row);
     };
+    if (self.goodsListArray.count>0)
+    {
+        HomeTradeCellModel *model = self.goodsListArray[indexPath.row];
+        [cell setTradeCellWithModel:model];
+    }
     return cell;
 }
 
@@ -60,7 +67,18 @@
     NSLog(@"item index :%ld",indexPath.row);
 }
 
-
+- (void)setValueWithListArray:(NSMutableArray *)listArray
+{
+    [self.goodsListArray removeAllObjects];
+    for (NSDictionary *dic in listArray) {
+        HomeTradeCellModel *model = [[HomeTradeCellModel alloc]init];
+        [model setValuesForKeysWithDictionary:dic];
+        [self.goodsListArray addObject:model];
+    }
+    [UIView animateWithDuration:1 animations:^{
+         [self.collectionView reloadData];
+    }];
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

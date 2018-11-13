@@ -47,6 +47,10 @@
 		CEFCB00C2195520A00102E1D /* HomeTradeWarpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFCB00A2195520A00102E1D /* HomeTradeWarpTableViewCell.xib */; };
 		CEFCB00F2195562F00102E1D /* HomeTradeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB00E2195562F00102E1D /* HomeTradeHeaderView.m */; };
 		CEFCB0112195564000102E1D /* HomeTradeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFCB0102195564000102E1D /* HomeTradeHeaderView.xib */; };
+		CEFCB0402195817F00102E1D /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB03F2195817F00102E1D /* DataSource.m */; };
+		CEFCB044219965FE00102E1D /* HomeIndexDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB043219965FE00102E1D /* HomeIndexDataModel.m */; };
+		CEFCB0472199755C00102E1D /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB0462199755C00102E1D /* ResultModel.m */; };
+		CEFCB057219AA50C00102E1D /* HomeHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB056219AA50C00102E1D /* HomeHeaderModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +146,16 @@
 		CEFCB00D2195562F00102E1D /* HomeTradeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTradeHeaderView.h; sourceTree = "<group>"; };
 		CEFCB00E2195562F00102E1D /* HomeTradeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTradeHeaderView.m; sourceTree = "<group>"; };
 		CEFCB0102195564000102E1D /* HomeTradeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTradeHeaderView.xib; sourceTree = "<group>"; };
+		CEFCB03E2195817F00102E1D /* DataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		CEFCB03F2195817F00102E1D /* DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		CEFCB04121990E9500102E1D /* FetchManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchManager.h; sourceTree = "<group>"; };
+		CEFCB042219965FE00102E1D /* HomeIndexDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeIndexDataModel.h; sourceTree = "<group>"; };
+		CEFCB043219965FE00102E1D /* HomeIndexDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeIndexDataModel.m; sourceTree = "<group>"; };
+		CEFCB0452199755C00102E1D /* ResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultModel.h; sourceTree = "<group>"; };
+		CEFCB0462199755C00102E1D /* ResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultModel.m; sourceTree = "<group>"; };
+		CEFCB048219A669000102E1D /* SDKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKHeader.h; sourceTree = "<group>"; };
+		CEFCB055219AA50C00102E1D /* HomeHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeHeaderModel.h; sourceTree = "<group>"; };
+		CEFCB056219AA50C00102E1D /* HomeHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderModel.m; sourceTree = "<group>"; };
 		E2CCBEC49121DB5275399F34 /* Pods-VegetableMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegetableMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +253,7 @@
 		CE36799621883102009593F1 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				CEFCB048219A669000102E1D /* SDKHeader.h */,
 				CE29F0BA218A9D51000E4F55 /* Url.h */,
 				CE29F0BC218A9ECC000E4F55 /* Macros.h */,
 				CE29F0BE218AC4E1000E4F55 /* Notification.h */,
@@ -287,6 +302,7 @@
 				CE9B63232187FA8000DFFB3F /* Mine */,
 				CE9B63272187FA8000DFFB3F /* PickUpGoods */,
 				CE9B631A2187FA7F00DFFB3F /* Resources */,
+				CEFCB03D219580FB00102E1D /* DataSource */,
 				CE29F0CB218AF4D2000E4F55 /* Category */,
 				CE9B631B2187FA8000DFFB3F /* Tools */,
 				CE36799621883102009593F1 /* Global */,
@@ -354,6 +370,10 @@
 			children = (
 				CE29619E21943B7F0063CA92 /* HomeTradeCellModel.h */,
 				CE29619F21943B7F0063CA92 /* HomeTradeCellModel.m */,
+				CEFCB042219965FE00102E1D /* HomeIndexDataModel.h */,
+				CEFCB043219965FE00102E1D /* HomeIndexDataModel.m */,
+				CEFCB055219AA50C00102E1D /* HomeHeaderModel.h */,
+				CEFCB056219AA50C00102E1D /* HomeHeaderModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -531,6 +551,18 @@
 				CE36798C21882E2B009593F1 /* Home.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CEFCB03D219580FB00102E1D /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				CEFCB04121990E9500102E1D /* FetchManager.h */,
+				CEFCB0452199755C00102E1D /* ResultModel.h */,
+				CEFCB0462199755C00102E1D /* ResultModel.m */,
+				CEFCB03E2195817F00102E1D /* DataSource.h */,
+				CEFCB03F2195817F00102E1D /* DataSource.m */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -742,6 +774,7 @@
 				CE29F0D8218C01C8000E4F55 /* UIView+Frame.m in Sources */,
 				CEFCB00B2195520A00102E1D /* HomeTradeWarpTableViewCell.m in Sources */,
 				CEFCB00F2195562F00102E1D /* HomeTradeHeaderView.m in Sources */,
+				CEFCB0402195817F00102E1D /* DataSource.m in Sources */,
 				CE29F0C0218AC4E1000E4F55 /* Notification.m in Sources */,
 				CE29F0E1218C2264000E4F55 /* NSString+ToDic.m in Sources */,
 				CE9B63332187FA8000DFFB3F /* BaseModel.m in Sources */,
@@ -753,9 +786,12 @@
 				CE9B6348218800FF00DFFB3F /* BaseViewController.m in Sources */,
 				CE2961A021943B7F0063CA92 /* HomeTradeCellModel.m in Sources */,
 				CE9B62F82187F7E200DFFB3F /* main.m in Sources */,
+				CEFCB0472199755C00102E1D /* ResultModel.m in Sources */,
+				CEFCB057219AA50C00102E1D /* HomeHeaderModel.m in Sources */,
 				CE9B63512188014500DFFB3F /* HomeViewController.m in Sources */,
 				CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */,
 				CE29F0D1218BE8B0000E4F55 /* UIColor+CCColor.m in Sources */,
+				CEFCB044219965FE00102E1D /* HomeIndexDataModel.m in Sources */,
 				CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */,
 				CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */,
 				CE29F0DB218C1959000E4F55 /* NSDictionary+ToJson.m in Sources */,

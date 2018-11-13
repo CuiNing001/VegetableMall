@@ -10,9 +10,12 @@
 #define Header_h
 
 #import "Url.h"
+#import "SDKHeader.h"
 #import "Notification.h"
 #import "Macros.h"
 #import "Tools.h"
 #import "Category.h"
+#import "FetchManager.h"
+
 
 #endif /* Header_h */

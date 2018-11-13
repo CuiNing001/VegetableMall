@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
+@property (strong, nonatomic) NSMutableArray *goodsListArray;
+
+- (void) setValueWithListArray:(NSMutableArray *)listArray;
 
 @end
 
