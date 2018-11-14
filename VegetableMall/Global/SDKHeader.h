@@ -13,5 +13,6 @@
 #import <SDWebImage/UIButton+WebCache.h>
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
+#import <SDCycleScrollView/SDCycleScrollView.h>
 
 #endif /* SDKHeader_h */

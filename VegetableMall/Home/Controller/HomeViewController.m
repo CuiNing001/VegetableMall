@@ -15,10 +15,12 @@
 #import "HomeDiscountModel.h"
 #import "HomePreGoodsModel.h"
 #import "HomeCategoryModel.h"
+#import "HomeBannerModel.h"
 
 @interface HomeViewController ()<
     UITableViewDelegate,
-    UITableViewDataSource
+    UITableViewDataSource,
+    SDCycleScrollViewDelegate
 >
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *warpView;
@@ -97,6 +99,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.scrollEnabled = NO;
+    self.tableView.separatorColor = [UIColor clearColor];
     [self.tableView registerNib:[UINib nibWithNibName:@"HomeTradeWarpTableViewCell" bundle:nil] forCellReuseIdentifier:@"tradeWarpCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"HomeTradeHeaderView" bundle:nil] forHeaderFooterViewReuseIdentifier:@"tradeWarpView"];
 }
@@ -118,8 +121,28 @@
         HomeCategoryModel *model = [HomeCategoryModel mj_objectWithKeyValues:buttonArray[i]];
         NSURL *imageUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@",model.thump]];
         UIButton *button = array[i];
+        [button rotationAnimation];
         [button sd_setImageWithURL:imageUrl forState:UIControlStateNormal];
     }
+}
+
+- (void)setCycleBannerImageWithImageArray:(NSMutableArray *)imageArray
+{
+    NSMutableArray *imageUrlArr = [NSMutableArray array];
+    for (NSDictionary *dic in imageArray)
+    {
+        HomeBannerModel *model = [HomeBannerModel mj_objectWithKeyValues:dic];
+        [imageUrlArr addObject:model.picture];
+    }
+    SDCycleScrollView *cyclesView = [SDCycleScrollView cycleScrollViewWithFrame:self.bannerView.bounds imageURLStringsGroup:imageUrlArr];
+    cyclesView.delegate = self;
+    cyclesView.imageURLStringsGroup = imageUrlArr;
+    cyclesView.backgroundColor = [UIColor clearColor];
+    cyclesView.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    cyclesView.autoScrollTimeInterval = 3.0f;
+    cyclesView.contentMode = UIViewContentModeScaleToFill;
+    [cyclesView cornerRadiusWithAngle:4.0f];
+    [self.bannerView addSubview:cyclesView];
 }
 
 #pragma mark - action
@@ -341,18 +364,26 @@
     [[DataSource getDataManager]fetchIndexSuccess:^(id  _Nonnull result)
     {
         HomeIndexDataModel *model = [HomeIndexDataModel mj_objectWithKeyValues:result];
+        // banner
         [self.bannerListArray addObjectsFromArray:model.bannerList];
-        [self.categoryListArray addObjectsFromArray:model.categoryList];
-        [self.categoryGoodsListArray addObjectsFromArray:model.categoryGoodsList];
+        [self setCycleBannerImageWithImageArray:self.bannerListArray];
         
+        // class button
+        [self.categoryListArray addObjectsFromArray:model.categoryList];
         [self setClassButtonIconWithButtonArray:self.categoryListArray];
         
+        // cell and header
+        [self.categoryGoodsListArray addObjectsFromArray:model.categoryGoodsList];
+        
+        // discount
         self.discountModel = [HomeDiscountModel mj_objectWithKeyValues:model.discountGoods];
         [self.discountGoodsArray addObjectsFromArray:self.discountModel.goodsList];
         
+        // pre goods
         self.preGoodsModel = [HomePreGoodsModel mj_objectWithKeyValues:model.preGoods];
         [self.preGoodsArray addObjectsFromArray:self.preGoodsModel.goodsList];
         
+        // updata layout
         [self upDataTableViewLayout];
     }
     faile:^(id  _Nonnull error)

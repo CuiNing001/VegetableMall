@@ -54,6 +54,7 @@
 		CEFCB05A219AB92300102E1D /* HomeDiscountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB059219AB92300102E1D /* HomeDiscountModel.m */; };
 		CEFCB05D219ABAF000102E1D /* HomePreGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB05C219ABAF000102E1D /* HomePreGoodsModel.m */; };
 		CEFCB060219BED7700102E1D /* HomeCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB05F219BED7700102E1D /* HomeCategoryModel.m */; };
+		CEFCB063219C146800102E1D /* HomeBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB062219C146800102E1D /* HomeBannerModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,8 @@
 		CEFCB05C219ABAF000102E1D /* HomePreGoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePreGoodsModel.m; sourceTree = "<group>"; };
 		CEFCB05E219BED7700102E1D /* HomeCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCategoryModel.h; sourceTree = "<group>"; };
 		CEFCB05F219BED7700102E1D /* HomeCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCategoryModel.m; sourceTree = "<group>"; };
+		CEFCB061219C146800102E1D /* HomeBannerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeBannerModel.h; sourceTree = "<group>"; };
+		CEFCB062219C146800102E1D /* HomeBannerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeBannerModel.m; sourceTree = "<group>"; };
 		E2CCBEC49121DB5275399F34 /* Pods-VegetableMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegetableMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -389,6 +392,8 @@
 				CEFCB056219AA50C00102E1D /* HomeHeaderModel.m */,
 				CEFCB05E219BED7700102E1D /* HomeCategoryModel.h */,
 				CEFCB05F219BED7700102E1D /* HomeCategoryModel.m */,
+				CEFCB061219C146800102E1D /* HomeBannerModel.h */,
+				CEFCB062219C146800102E1D /* HomeBannerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -811,6 +816,7 @@
 				CEFCB044219965FE00102E1D /* HomeIndexDataModel.m in Sources */,
 				CEFCB05D219ABAF000102E1D /* HomePreGoodsModel.m in Sources */,
 				CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */,
+				CEFCB063219C146800102E1D /* HomeBannerModel.m in Sources */,
 				CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */,
 				CE29F0DB218C1959000E4F55 /* NSDictionary+ToJson.m in Sources */,
 				CE29618E2193CDD00063CA92 /* HomeNavLeftItemView.m in Sources */,

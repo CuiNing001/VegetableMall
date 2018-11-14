@@ -81,7 +81,7 @@
 {
     CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scale.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    scale.toValue = [NSNumber numberWithFloat:1.5];
+    scale.toValue = [NSNumber numberWithFloat:1.3];
     scale.removedOnCompletion = YES;
     scale.autoreverses = YES; 
     scale.duration = 0.5;
