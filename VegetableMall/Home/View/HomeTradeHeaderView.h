@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "HomeHeaderModel.h"
+#import "HomePreGoodsModel.h"
+#import "HomeDiscountModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) void(^headerChooesBtnBlock)(void);
 
 - (void)setButtonImageWithModel:(HomeHeaderModel *)model;
+
+- (void)setButtonImageWithDisModel:(HomeDiscountModel *)DisModel;
+
+- (void)setButtonImageWithPreModel:(HomePreGoodsModel *)PreModel;
 
 @end
 

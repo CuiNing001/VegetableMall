@@ -11,5 +11,7 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/UIButton+WebCache.h>
+#import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
 
 #endif /* SDKHeader_h */

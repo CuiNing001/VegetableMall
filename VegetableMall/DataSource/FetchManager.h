@@ -10,7 +10,7 @@
 #define FetchManager_h
 
 #import "DataSource.h"
-#import <MJExtension/MJExtension.h>
+
 
 
 #endif /* FetchManager_h */

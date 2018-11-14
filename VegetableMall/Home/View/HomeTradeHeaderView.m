@@ -34,6 +34,18 @@
     [self.chooseButton sd_setImageWithURL:[NSURL URLWithString:urlStr] forState:UIControlStateNormal];
 }
 
+- (void)setButtonImageWithDisModel:(HomeDiscountModel *)DisModel
+{
+    NSString *urlStr = [NSString stringWithFormat:@"%@",DisModel.discountPic];
+    [self.chooseButton sd_setImageWithURL:[NSURL URLWithString:urlStr] forState:UIControlStateNormal];
+}
+
+- (void)setButtonImageWithPreModel:(HomePreGoodsModel *)PreModel
+{
+    NSString *urlStr = [NSString stringWithFormat:@"%@",PreModel.preSoldPic];
+    [self.chooseButton sd_setImageWithURL:[NSURL URLWithString:urlStr] forState:UIControlStateNormal];
+}
+
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

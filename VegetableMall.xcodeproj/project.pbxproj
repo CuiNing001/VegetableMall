@@ -51,6 +51,9 @@
 		CEFCB044219965FE00102E1D /* HomeIndexDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB043219965FE00102E1D /* HomeIndexDataModel.m */; };
 		CEFCB0472199755C00102E1D /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB0462199755C00102E1D /* ResultModel.m */; };
 		CEFCB057219AA50C00102E1D /* HomeHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB056219AA50C00102E1D /* HomeHeaderModel.m */; };
+		CEFCB05A219AB92300102E1D /* HomeDiscountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB059219AB92300102E1D /* HomeDiscountModel.m */; };
+		CEFCB05D219ABAF000102E1D /* HomePreGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB05C219ABAF000102E1D /* HomePreGoodsModel.m */; };
+		CEFCB060219BED7700102E1D /* HomeCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCB05F219BED7700102E1D /* HomeCategoryModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +159,12 @@
 		CEFCB048219A669000102E1D /* SDKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKHeader.h; sourceTree = "<group>"; };
 		CEFCB055219AA50C00102E1D /* HomeHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeHeaderModel.h; sourceTree = "<group>"; };
 		CEFCB056219AA50C00102E1D /* HomeHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderModel.m; sourceTree = "<group>"; };
+		CEFCB058219AB92300102E1D /* HomeDiscountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeDiscountModel.h; sourceTree = "<group>"; };
+		CEFCB059219AB92300102E1D /* HomeDiscountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDiscountModel.m; sourceTree = "<group>"; };
+		CEFCB05B219ABAF000102E1D /* HomePreGoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePreGoodsModel.h; sourceTree = "<group>"; };
+		CEFCB05C219ABAF000102E1D /* HomePreGoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePreGoodsModel.m; sourceTree = "<group>"; };
+		CEFCB05E219BED7700102E1D /* HomeCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCategoryModel.h; sourceTree = "<group>"; };
+		CEFCB05F219BED7700102E1D /* HomeCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCategoryModel.m; sourceTree = "<group>"; };
 		E2CCBEC49121DB5275399F34 /* Pods-VegetableMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegetableMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -372,8 +381,14 @@
 				CE29619F21943B7F0063CA92 /* HomeTradeCellModel.m */,
 				CEFCB042219965FE00102E1D /* HomeIndexDataModel.h */,
 				CEFCB043219965FE00102E1D /* HomeIndexDataModel.m */,
+				CEFCB058219AB92300102E1D /* HomeDiscountModel.h */,
+				CEFCB059219AB92300102E1D /* HomeDiscountModel.m */,
+				CEFCB05B219ABAF000102E1D /* HomePreGoodsModel.h */,
+				CEFCB05C219ABAF000102E1D /* HomePreGoodsModel.m */,
 				CEFCB055219AA50C00102E1D /* HomeHeaderModel.h */,
 				CEFCB056219AA50C00102E1D /* HomeHeaderModel.m */,
+				CEFCB05E219BED7700102E1D /* HomeCategoryModel.h */,
+				CEFCB05F219BED7700102E1D /* HomeCategoryModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -773,6 +788,7 @@
 				CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */,
 				CE29F0D8218C01C8000E4F55 /* UIView+Frame.m in Sources */,
 				CEFCB00B2195520A00102E1D /* HomeTradeWarpTableViewCell.m in Sources */,
+				CEFCB060219BED7700102E1D /* HomeCategoryModel.m in Sources */,
 				CEFCB00F2195562F00102E1D /* HomeTradeHeaderView.m in Sources */,
 				CEFCB0402195817F00102E1D /* DataSource.m in Sources */,
 				CE29F0C0218AC4E1000E4F55 /* Notification.m in Sources */,
@@ -780,6 +796,7 @@
 				CE9B63332187FA8000DFFB3F /* BaseModel.m in Sources */,
 				CE9B634B2188013100DFFB3F /* CartViewController.m in Sources */,
 				CE29F0E4218C496D000E4F55 /* NSString+DisplayTime.m in Sources */,
+				CEFCB05A219AB92300102E1D /* HomeDiscountModel.m in Sources */,
 				CE29F0CE218AF58A000E4F55 /* UIView+CCView.m in Sources */,
 				CE29F0DE218C2042000E4F55 /* NSArray+ToJson.m in Sources */,
 				CE296197219434EC0063CA92 /* HomeCollectionViewCell.m in Sources */,
@@ -792,6 +809,7 @@
 				CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */,
 				CE29F0D1218BE8B0000E4F55 /* UIColor+CCColor.m in Sources */,
 				CEFCB044219965FE00102E1D /* HomeIndexDataModel.m in Sources */,
+				CEFCB05D219ABAF000102E1D /* HomePreGoodsModel.m in Sources */,
 				CE29F0C8218AE570000E4F55 /* AFNetManager.m in Sources */,
 				CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */,
 				CE29F0DB218C1959000E4F55 /* NSDictionary+ToJson.m in Sources */,
