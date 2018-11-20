@@ -16,9 +16,62 @@
                     <view key="view" contentMode="scaleToFill" id="0A1-yT-OZb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2PH-BQ-bBZ">
+                                <rect key="frame" x="0.0" y="44" width="100" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="pHJ-g9-FIw"/>
+                                </constraints>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LC1-jF-SXl">
+                                <rect key="frame" x="100" y="44" width="314" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="pAc-fF-5V5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sZl-k1-t0W">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pte-gz-22N">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="grU-O3-uFO">
+                                <rect key="frame" x="100" y="172" width="314" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ecT-p7-rvQ" firstAttribute="bottom" secondItem="grU-O3-uFO" secondAttribute="bottom" id="2Zt-oi-348"/>
+                            <constraint firstItem="LC1-jF-SXl" firstAttribute="top" secondItem="ecT-p7-rvQ" secondAttribute="top" id="4Xa-x1-eni"/>
+                            <constraint firstItem="LC1-jF-SXl" firstAttribute="leading" secondItem="2PH-BQ-bBZ" secondAttribute="trailing" id="4hL-K1-eto"/>
+                            <constraint firstItem="2PH-BQ-bBZ" firstAttribute="leading" secondItem="ecT-p7-rvQ" secondAttribute="leading" id="9GZ-cO-cgv"/>
+                            <constraint firstItem="grU-O3-uFO" firstAttribute="leading" secondItem="2PH-BQ-bBZ" secondAttribute="trailing" id="A8i-ne-lAL"/>
+                            <constraint firstItem="2PH-BQ-bBZ" firstAttribute="top" secondItem="ecT-p7-rvQ" secondAttribute="top" id="IpC-Y4-73g"/>
+                            <constraint firstItem="ecT-p7-rvQ" firstAttribute="trailing" secondItem="LC1-jF-SXl" secondAttribute="trailing" id="Xxe-aq-eZM"/>
+                            <constraint firstItem="ecT-p7-rvQ" firstAttribute="trailing" secondItem="grU-O3-uFO" secondAttribute="trailing" id="ccq-Uq-1ge"/>
+                            <constraint firstItem="grU-O3-uFO" firstAttribute="top" secondItem="LC1-jF-SXl" secondAttribute="bottom" id="fXN-RG-Wnn"/>
+                            <constraint firstItem="ecT-p7-rvQ" firstAttribute="bottom" secondItem="2PH-BQ-bBZ" secondAttribute="bottom" id="uFV-Ri-ya0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ecT-p7-rvQ"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="LC1-jF-SXl" id="oIe-dm-fxi"/>
+                        <outlet property="leftTableView" destination="2PH-BQ-bBZ" id="4sS-bu-fh3"/>
+                        <outlet property="rightTableView" destination="grU-O3-uFO" id="KUi-JV-kuQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGX-Nb-orS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

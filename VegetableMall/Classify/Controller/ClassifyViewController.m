@@ -10,6 +10,11 @@
 
 @interface ClassifyViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *leftTableView;
+@property (weak, nonatomic) IBOutlet UITableView *rightTableView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+
 @end
 
 @implementation ClassifyViewController
@@ -19,7 +24,56 @@
     [super viewDidLoad];
     
     self.title = @"分类";
+    
+    [self setUpUI];
+    [self loadData];
 }
+
+#pragma marrk - system function
+
+#pragma mark - init
+- (void)setUpUI
+{
+    
+}
+
+#pragma mark - get data
+- (void)loadData
+{
+    [self loadGoodsCategoryListData];
+}
+
+- (void)loadGoodsCategoryListData
+{
+    [[DataSource getDataManager]fetchGoodsCategoryListWithPid:@"0" success:^(id  _Nonnull result)
+    {
+        
+    }
+    faile:^(id  _Nonnull error)
+    {
+        
+    }];
+}
+
+- (void)loadGoodsListDataWithCategoryId:(NSString *)categoryId
+{
+    [[DataSource getDataManager]fetchGoodsListWithPid:@"211" categoryId:categoryId success:^(id  _Nonnull result)
+    {
+        
+    }
+    faile:^(id  _Nonnull error)
+    {
+        
+    }];
+}
+
+#pragma mark - action
+
+#pragma mark - tableView delegate
+
+#pragma mark - collection delegate
+
+#pragma lazy
 
 /*
 #pragma mark - Navigation

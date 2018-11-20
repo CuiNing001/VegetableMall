@@ -391,5 +391,81 @@
      }];
 }
 
+#pragma mark - 分类商品
+/*
+ * 14.查询分类    :/goodsCategory/list
+ *  @param pid  :上级分类id，传0或不传查询结果为一级分类，传其他值为查询二级分类，如pid=61
+ */
+- (void)fetchGoodsCategoryListWithPid:(NSString *)pid success:(void (^)(id _Nonnull))success faile:(void (^)(id _Nonnull))faile
+{
+    NSString *url = [NSString stringWithFormat:@"%@%@",SERVER_BASE_URL,GOODS_CATEGORY_LIST_URL];
+    NSDictionary *paramDic = @{@"pid":pid};
+    [[AFNetManager netShareManager]requestPOSTWithURLStr:url paramDic:paramDic token:@"" finish:^(id  _Nonnull responserObject)
+     {
+         NSLog(@"goods__category__list__success__:%@",responserObject);
+         ResultModel *model = [ResultModel mj_objectWithKeyValues:responserObject];
+         if (model.code.integerValue == 9200)
+         {
+             success(model.data);
+         }
+         else
+         {
+             [[AlertManager alertShareManager]toastWithMessage:model.msg time:2.0];
+         }
+     }
+      enError:^(NSError * _Nonnull error)
+     {
+         faile(error);
+         NSLog(@"goods__category_list_faile__:%@",error);
+     }];
+}
+/*
+ * 15.根据分类查询商品列表    :/goods/list
+ *  @param pid       : 一级分类id
+ *  @param categoryId: 二级分类id
+ *  两个参数不能同时为空，categoryId不为空时查询结果为该分类下的商品，为空时查询结果为一级分类pid下的全部商品
+ */
+-(void)fetchGoodsListWithPid:(NSString *)pid categoryId:(NSString *)categoryId success:(void (^)(id _Nonnull))success faile:(void (^)(id _Nonnull))faile
+{
+    NSString *url = [NSString stringWithFormat:@"%@%@",SERVER_BASE_URL,GOODS_LIST_URL];
+    NSDictionary *paramDic = @{@"pid":pid,@"categoryId":categoryId};
+    [[AFNetManager netShareManager]requestPOSTWithURLStr:url paramDic:paramDic token:@"" finish:^(id  _Nonnull responserObject)
+     {
+         NSLog(@"goods__list__success__:%@",responserObject);
+         ResultModel *model = [ResultModel mj_objectWithKeyValues:responserObject];
+         if (model.code.integerValue == 9200)
+         {
+             success(model.data);
+         }
+         else
+         {
+             [[AlertManager alertShareManager]toastWithMessage:model.msg time:2.0];
+         }
+     }
+      enError:^(NSError * _Nonnull error)
+     {
+         faile(error);
+         NSLog(@"goods__list__faile__:%@",error);
+     }];
+}
+
+#pragma mark - 购物车接口
+
+#pragma mark - 商品相关(详情/收藏/取消收藏)
+
+#pragma mark - 个人中心
+
+#pragma mark - 我的消息
+
+#pragma mark - 我的钱包
+
+#pragma mark - 预约厨师
+
+#pragma mark - 提货点
+
+#pragma mark - 订单相关接口
+
+#pragma mark - 预售商品结算/支付
+
 
 @end

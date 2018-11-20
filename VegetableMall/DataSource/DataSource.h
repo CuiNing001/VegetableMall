@@ -112,6 +112,25 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)fetchMessageIsHasSuccess:(void(^)(id resule))success
                            faile:(void(^)(id erroe))faile;
 
+/*
+ * 14.查询分类    :/goodsCategory/list
+ *  @param pid  :上级分类id，传0或不传查询结果为一级分类，传其他值为查询二级分类，如pid=61
+ */
+- (void)fetchGoodsCategoryListWithPid:(NSString *)pid
+                              success:(void(^)(id result))success
+                                faile:(void(^)(id error))faile;
+
+/*
+ * 15.根据分类查询商品列表    :/goods/list
+ *  @param pid       : 一级分类id
+ *  @param categoryId: 二级分类id
+ *  两个参数不能同时为空，categoryId不为空时查询结果为该分类下的商品，为空时查询结果为一级分类pid下的全部商品
+ */
+- (void)fetchGoodsListWithPid:(NSString *)pid
+                   categoryId:(NSString *)categoryId
+                      success:(void(^)(id result))success
+                        faile:(void(^)(id error))faile;
+
 @end
 
 NS_ASSUME_NONNULL_END
