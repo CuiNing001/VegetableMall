@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0B5DCB00E1304266FA6CAD92 /* Pods_VegetableMall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */; };
+		CE0B624A21A3B06F00FE4072 /* ClassGoodsCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B624921A3B06F00FE4072 /* ClassGoodsCategoryModel.m */; };
+		CE0B624D21A3EDC600FE4072 /* ClassGoodsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B624C21A3EDC600FE4072 /* ClassGoodsListModel.m */; };
+		CE0B625121A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B624F21A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.m */; };
+		CE0B625221A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B625021A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.xib */; };
+		CE0B625621A6442300FE4072 /* ClassifyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B625421A6442300FE4072 /* ClassifyCollectionViewCell.m */; };
+		CE0B625721A6442300FE4072 /* ClassifyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B625521A6442300FE4072 /* ClassifyCollectionViewCell.xib */; };
+		CE0B625B21A6868200FE4072 /* ClassCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B625921A6868200FE4072 /* ClassCategoryTableViewCell.m */; };
+		CE0B625C21A6868200FE4072 /* ClassCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0B625A21A6868200FE4072 /* ClassCategoryTableViewCell.xib */; };
 		CE29618E2193CDD00063CA92 /* HomeNavLeftItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE29618D2193CDD00063CA92 /* HomeNavLeftItemView.m */; };
 		CE2961902193CDE80063CA92 /* HomeNavLeftItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29618F2193CDE80063CA92 /* HomeNavLeftItemView.xib */; };
 		CE296197219434EC0063CA92 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE296195219434EC0063CA92 /* HomeCollectionViewCell.m */; };
@@ -77,6 +85,19 @@
 /* Begin PBXFileReference section */
 		04CF7981D8A329BC6DDDFE46 /* Pods-VegetableMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegetableMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-VegetableMall/Pods-VegetableMall.release.xcconfig"; sourceTree = "<group>"; };
 		43ADAC475976369E42B2774D /* Pods_VegetableMall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegetableMall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0B624821A3B06F00FE4072 /* ClassGoodsCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassGoodsCategoryModel.h; sourceTree = "<group>"; };
+		CE0B624921A3B06F00FE4072 /* ClassGoodsCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassGoodsCategoryModel.m; sourceTree = "<group>"; };
+		CE0B624B21A3EDC600FE4072 /* ClassGoodsListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassGoodsListModel.h; sourceTree = "<group>"; };
+		CE0B624C21A3EDC600FE4072 /* ClassGoodsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassGoodsListModel.m; sourceTree = "<group>"; };
+		CE0B624E21A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyGoodsListTableViewCell.h; sourceTree = "<group>"; };
+		CE0B624F21A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyGoodsListTableViewCell.m; sourceTree = "<group>"; };
+		CE0B625021A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassifyGoodsListTableViewCell.xib; sourceTree = "<group>"; };
+		CE0B625321A6442300FE4072 /* ClassifyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyCollectionViewCell.h; sourceTree = "<group>"; };
+		CE0B625421A6442300FE4072 /* ClassifyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyCollectionViewCell.m; sourceTree = "<group>"; };
+		CE0B625521A6442300FE4072 /* ClassifyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassifyCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE0B625821A6868200FE4072 /* ClassCategoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassCategoryTableViewCell.h; sourceTree = "<group>"; };
+		CE0B625921A6868200FE4072 /* ClassCategoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassCategoryTableViewCell.m; sourceTree = "<group>"; };
+		CE0B625A21A6868200FE4072 /* ClassCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		CE29618C2193CDD00063CA92 /* HomeNavLeftItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNavLeftItemView.h; sourceTree = "<group>"; };
 		CE29618D2193CDD00063CA92 /* HomeNavLeftItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNavLeftItemView.m; sourceTree = "<group>"; };
 		CE29618F2193CDE80063CA92 /* HomeNavLeftItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeNavLeftItemView.xib; sourceTree = "<group>"; };
@@ -549,6 +570,10 @@
 		CE9B63312187FA8000DFFB3F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE0B624821A3B06F00FE4072 /* ClassGoodsCategoryModel.h */,
+				CE0B624921A3B06F00FE4072 /* ClassGoodsCategoryModel.m */,
+				CE0B624B21A3EDC600FE4072 /* ClassGoodsListModel.h */,
+				CE0B624C21A3EDC600FE4072 /* ClassGoodsListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -556,6 +581,15 @@
 		CE9B63322187FA8000DFFB3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE0B624E21A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.h */,
+				CE0B624F21A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.m */,
+				CE0B625021A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.xib */,
+				CE0B625821A6868200FE4072 /* ClassCategoryTableViewCell.h */,
+				CE0B625921A6868200FE4072 /* ClassCategoryTableViewCell.m */,
+				CE0B625A21A6868200FE4072 /* ClassCategoryTableViewCell.xib */,
+				CE0B625321A6442300FE4072 /* ClassifyCollectionViewCell.h */,
+				CE0B625421A6442300FE4072 /* ClassifyCollectionViewCell.m */,
+				CE0B625521A6442300FE4072 /* ClassifyCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -695,9 +729,12 @@
 				CE36799121882E2B009593F1 /* Home.storyboard in Resources */,
 				CE9B62F52187F7E200DFFB3F /* LaunchScreen.storyboard in Resources */,
 				CEFCB00C2195520A00102E1D /* HomeTradeWarpTableViewCell.xib in Resources */,
+				CE0B625721A6442300FE4072 /* ClassifyCollectionViewCell.xib in Resources */,
+				CE0B625C21A6868200FE4072 /* ClassCategoryTableViewCell.xib in Resources */,
 				CEFCB0112195564000102E1D /* HomeTradeHeaderView.xib in Resources */,
 				CE36799321882E2B009593F1 /* Mine.storyboard in Resources */,
 				CE9B63362187FC6C00DFFB3F /* Default-568h@2x.png in Resources */,
+				CE0B625221A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.xib in Resources */,
 				CE9B62F22187F7E200DFFB3F /* Assets.xcassets in Resources */,
 				CE36799021882E2B009593F1 /* PickUpGoods.storyboard in Resources */,
 				CE296198219434EC0063CA92 /* HomeCollectionViewCell.xib in Resources */,
@@ -792,7 +829,9 @@
 				CE9B634E2188013D00DFFB3F /* ClassifyViewController.m in Sources */,
 				CE29F0C5218AE537000E4F55 /* AlertManager.m in Sources */,
 				CE29F0D8218C01C8000E4F55 /* UIView+Frame.m in Sources */,
+				CE0B625621A6442300FE4072 /* ClassifyCollectionViewCell.m in Sources */,
 				CEFCB00B2195520A00102E1D /* HomeTradeWarpTableViewCell.m in Sources */,
+				CE0B624A21A3B06F00FE4072 /* ClassGoodsCategoryModel.m in Sources */,
 				CEFCB060219BED7700102E1D /* HomeCategoryModel.m in Sources */,
 				CEFCB00F2195562F00102E1D /* HomeTradeHeaderView.m in Sources */,
 				CEFCB0402195817F00102E1D /* DataSource.m in Sources */,
@@ -804,6 +843,7 @@
 				CEFCB05A219AB92300102E1D /* HomeDiscountModel.m in Sources */,
 				CE29F0CE218AF58A000E4F55 /* UIView+CCView.m in Sources */,
 				CE29F0DE218C2042000E4F55 /* NSArray+ToJson.m in Sources */,
+				CE0B624D21A3EDC600FE4072 /* ClassGoodsListModel.m in Sources */,
 				CE296197219434EC0063CA92 /* HomeCollectionViewCell.m in Sources */,
 				CE9B6348218800FF00DFFB3F /* BaseViewController.m in Sources */,
 				CE2961A021943B7F0063CA92 /* HomeTradeCellModel.m in Sources */,
@@ -812,6 +852,7 @@
 				CEFCB057219AA50C00102E1D /* HomeHeaderModel.m in Sources */,
 				CE9B63512188014500DFFB3F /* HomeViewController.m in Sources */,
 				CE9B62EA2187F7E200DFFB3F /* AppDelegate.m in Sources */,
+				CE0B625B21A6868200FE4072 /* ClassCategoryTableViewCell.m in Sources */,
 				CE29F0D1218BE8B0000E4F55 /* UIColor+CCColor.m in Sources */,
 				CEFCB044219965FE00102E1D /* HomeIndexDataModel.m in Sources */,
 				CEFCB05D219ABAF000102E1D /* HomePreGoodsModel.m in Sources */,
@@ -819,6 +860,7 @@
 				CEFCB063219C146800102E1D /* HomeBannerModel.m in Sources */,
 				CE9B63542188014E00DFFB3F /* MineViewController.m in Sources */,
 				CE29F0DB218C1959000E4F55 /* NSDictionary+ToJson.m in Sources */,
+				CE0B625121A3F1A600FE4072 /* ClassifyGoodsListTableViewCell.m in Sources */,
 				CE29618E2193CDD00063CA92 /* HomeNavLeftItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
