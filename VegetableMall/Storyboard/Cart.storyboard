@@ -16,10 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="Yew-OZ-B1Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="o2f-HE-aNT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S7g-h2-jVw" firstAttribute="bottom" secondItem="o2f-HE-aNT" secondAttribute="bottom" id="AqN-gE-ruM"/>
+                            <constraint firstItem="o2f-HE-aNT" firstAttribute="leading" secondItem="S7g-h2-jVw" secondAttribute="leading" id="G8P-JT-hpX"/>
+                            <constraint firstItem="o2f-HE-aNT" firstAttribute="top" secondItem="S7g-h2-jVw" secondAttribute="top" id="iVs-kx-nbM"/>
+                            <constraint firstItem="S7g-h2-jVw" firstAttribute="trailing" secondItem="o2f-HE-aNT" secondAttribute="trailing" id="ycJ-R6-4O5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="S7g-h2-jVw"/>
                     </view>
                     <navigationItem key="navigationItem" title="购物车" id="hQh-7l-BUh"/>
+                    <connections>
+                        <outlet property="tableView" destination="o2f-HE-aNT" id="4S0-19-HeD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5s-dI-gJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
